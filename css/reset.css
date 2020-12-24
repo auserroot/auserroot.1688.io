@@ -1,0 +1,70 @@
+/* 重置css样式 */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{
+    margin:0;
+    padding:0;
+}
+/* 设置全局默认字号和字体 */
+body,html{
+    width: 100%;
+    height: 100%;
+    font: 14px "微软雅黑",Arial;
+}
+/* 取消默认加粗样式 */
+h1,h2,h3,h4,h5,h6,b,strong{
+    font-weight:normal;
+    font-size: 100%;
+}
+/* 取消默认倾斜样式 */
+i,em{
+    font-style: normal;
+}
+/* 取消列表项目符号 */
+ul,ol,li{
+    list-style:none;
+}
+/* 取消input选中后的高亮框 */
+input{
+    border: none;
+    outline-style:none;
+}
+/* 取消默认下划线 */
+a{
+    text-decoration: none;
+}
+/* 帮助解决图片被嵌套后的3~6像素bug */
+img{
+    vertical-align: middle;
+}
+/* 去除浮动影响方法二选一即可 */
+/* 清除浮动影响方法1 */
+/*万能浮动消除法*/
+.clearfix {
+    /* display: inline-block; */
+    *zoom: 1;
+} */ /* for IE/Mac*/
+.clearfix:after { 
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* 清除浮动影响方法2 */
+/*html body div.clear,
+html body span.clear
+{
+    background: none;
+    border: 0;
+    clear: both;
+    display: block;
+    float: none;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}*/
+ 

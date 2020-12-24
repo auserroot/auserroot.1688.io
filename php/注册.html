@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./register.php" method="POST" id="fm">
+        username：<input type="text" name="username" placeholder="enter username">
+        <br>
+        password：<input type="password" name="password" placeholder="enter password">
+        <br>
+        password：<input type="password" name="tpwd" placeholder="twice enter password">
+        <br>
+        <input type="button" value="backto login">
+        <input type="submit" value="register">
+    </form>
+
+    <script>
+        var btn = document.querySelector("[type='button']");
+        var psd = document.querySelector("[type='password']");
+        var fm = document.querySelector('#fm')
+        fm.onsubmit = function(){
+            if(psd[0]!=psd[1]){
+                location = './注册.html';
+                return false;
+            }
+        }
+        btn.onclick = function(){
+            location = './登录.html';
+        }
+    </script>
+</body>
+</html>

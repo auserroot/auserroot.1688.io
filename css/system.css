@@ -1,0 +1,396 @@
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.warp{
+    width: 100%;
+}
+.container{
+    width: 1190px;
+    height: 100%;
+    margin: 0 auto;
+}
+.header{
+    height: 24px;
+    color: #555;
+    padding: 4px 0;
+    border-bottom: 1px solid #eee;
+}
+.header a{
+    color: #555;
+}
+.h_rigth span.phone{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    padding-left: 14px;
+    padding-right: 6px;
+    margin-right: 6px;
+    background:url(https://cbu01.alicdn.com/cms/upload/homepage/alibar/alibar.png) no-repeat 0 -115px;
+    position: relative;
+}
+.h_rigth span.phone::after{
+    position: absolute;
+    right: 0;
+    top: 3px;
+    content: "";
+    width: 1px;
+    height: 18px;
+    background-color: #EEEEEE;
+}
+.h_rigth span a{
+    display: inline-block;
+    font-size: 14px;
+    /* color: #000; */
+    line-height: 30px;
+    margin-top: -3px;
+}
+.h_rigth a:hover{
+    color:  #f27800;
+    text-decoration: underline;
+}
+.redbg{
+    position: relative;
+    margin-left: 6px;
+    padding-left: 14px;
+    background: url(https://img.alicdn.com/tfs/TB1EV4XrAvoK1RjSZPfXXXPKFXa-12-16.png) no-repeat 0 3px;
+}
+.list1{
+    position: absolute;
+    top: 22px;
+    left: -12px;
+    padding: 16px 0 0 7px;
+    width: 280px;
+    height: 116px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    display: none;
+}
+.list1 p span{
+    display: inline-block;
+    margin: 0 13px;
+    padding-left: 20px;
+    line-height: 28px;
+    color:#f27800 ;
+    background: url(https://img.alicdn.com/tfs/TB140FnrkvoK1RjSZFNXXcxMVXa-14-14.png) no-repeat 0 6px;
+}
+.list1_p1{
+    font-size: 15px;
+    color: #222;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.close{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    background: url(https://img.alicdn.com/tfs/TB1WJ8lrhTpK1RjSZFKXXa2wXXa-12-10.png) no-repeat;
+}
+/* .redbg a:hover .list1{
+    display: block;
+} */
+.sign{
+    margin-left: 6px;
+}
+.h_rigth{
+    float: left;
+}
+.h_left{
+    position: relative;
+    float: left;
+    margin-left: 38px;
+}
+.h_left span{
+    display: inline-block;
+    padding-right: 4px;
+    padding-left: 6px;
+    background: url(https://cbu01.alicdn.com/cms/upload/homepage/alibar/alibar.png) no-repeat right -146px;
+}
+.h_left span a{
+    display: inline-block;
+    font-size: 14px;
+    padding-right: 6px;
+    line-height: 30px;
+    margin-top: -3px;
+    background:url(https://cbu01.alicdn.com/cms/upload/2016/404/906/2609404_1073447813.png) right 12px no-repeat;
+}
+.h_left a:hover{
+    color:  #f27800;
+    text-decoration: underline;
+}
+.h_left span:nth-child(1) a{
+    background: none;
+}
+.list2{
+    position: absolute;
+    top: 23px;
+    left: 76px;
+    width: 252px;
+    height: 138px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    display: none;
+}
+.list2 ul li{
+    float: left;
+    margin: 0 8px;
+}
+.list2 ul li a{
+    display: block;
+    font-size: 12px;
+    color: #555;
+    background: none;
+}
+.list2 ul li a:nth-child(1){
+    font-weight: bold;
+}
+
+.h_left span:nth-child(3) a.t i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    background: url(https://cbu01.alicdn.com/cms/upload/homepage/alibar/alibar.png) no-repeat 0 2px;
+}
+
+.list3{
+    width: 446px;
+    height: 154px;
+    position: absolute;
+    top: 23px;
+    left: 160px;
+    color: #666;
+    font-size: 12px;
+    display: none;
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+.list3 div{
+    height: 74px;
+    line-height: 74px;
+    text-align: center;
+}
+.h_left span .list3 a{
+    background: #FF7300;
+    display: block;
+    width: 78px;
+    height: 26px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 26px;
+    position: absolute;
+    bottom: 14px;
+    right: 15px;
+}
+.star{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/star.png) no-repeat;
+}
+.list4{
+    position: absolute;
+    top: 23px;
+    left: 244px;
+    width: 226px;
+    height: 164px;
+    background-color: #fff;
+    border: 1px solid #eee;
+    display: none;
+}
+.list4 ul li{
+    float: left;
+    margin: 0 6px;
+}
+.list4 ul li a{
+    display: block;
+    font-size: 12px;
+    color: #555;
+    background: none;
+}
+.list4 ul li a:nth-child(1){
+    font-weight: bold;
+}
+.list5{
+    width: 88px;
+    height: 158px;   
+    border: 1px solid #eee;
+    background-color: #fff;
+    padding: 5px 0 0 7px;
+    position: absolute;
+    top: 23px;
+    left: 332px;
+    display: none;
+}
+.h_left span .list5 a{
+    display: block;
+    font-size: 12px;
+    color: #555;
+    background: none;
+}
+.h_left span .list5 a:hover{
+    color: #f27800;
+    text-decoration: underline;
+}
+.list6{
+    width: 70px;
+    height: 150px;   
+    border: 1px solid #eee;
+    background-color: #fff;
+    position: absolute;
+    top: 23px;
+    left: 420px;
+    padding: 5px 0 0 7px;
+    display: none;
+}
+.h_left span .list6 a{
+    display: block;
+    font-size: 12px;
+    color: #555;
+    background: none;
+}
+.h_left span .list6 a:hover{
+    color: #f27800;
+    text-decoration: underline;
+}
+.list7{
+    width: 88px;
+    height: 132px;   
+    border: 1px solid #eee;
+    background-color: #fff;
+    position: absolute;
+    top: 23px;
+    left: 497px;
+    padding: 5px 0 0 7px;
+    display: none;
+}
+.h_left span .list7 a{
+    display: block;
+    font-size: 12px;
+    color: #555;
+    background: none;
+}
+.h_left span .list7 a:hover{
+    color: #f27800;
+    text-decoration: underline;
+}
+.list8{
+    width: 82px;
+    height: 180px;   
+    border: 1px solid #eee;
+    background-color: #fff;
+    position: absolute;
+    top: 23px;
+    left: 573px;
+    padding: 5px 0 0 7px;
+    display: none;
+}
+.h_left span .list8 a{
+    display: block;
+    font-size: 12px;
+    color: #555;
+    background: none;
+}
+.h_left span .list8 a:hover{
+    color: #f27800;
+    text-decoration: underline;
+}
+.list9{
+    width: 70px;
+    height: 60px;   
+    border: 1px solid #eee;
+    background-color: #fff;
+    position: absolute;
+    top: 23px;
+    left: 663px;
+    padding: 5px 0 0 7px;
+    display: none;
+}
+.h_left span .list9 a{
+    display: block;
+    font-size: 12px;
+    color: #555;
+    background: none;
+}
+.h_left span .list9 a:hover{
+    color: #f27800;
+    text-decoration: underline;
+}
+.list10{
+    width: 478px;
+    height: 654px;
+    position: absolute;
+    top: 23px;
+    right: 0;
+    border: 1px solid #eee;
+    background-color: #fff;
+    display: none;
+}
+.list10 dl {
+    padding: 16px 12px 0 18px;
+}
+.list10 dl dt{
+    width: 56px;
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #555;
+    margin-right: 20px;
+}
+.list10 dl dd{
+    width: 370px;
+    float: left;
+    color: #555;
+    font-size: 12px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.list10 dl dd span{
+    float: left;
+    color: #555;
+    font-size: 12px;
+}
+.h_left span .list10 dl dd a{
+    color: #555;
+    background: none;
+}
+.h_left span .list10 dl dd a:hover{
+    color: #f27800;
+    text-decoration: underline;
+}
+.list10 dl .h_btn { 
+    position: absolute;
+    bottom: 0;
+    right: 0;  
+    height: 34px;
+    width: 100%;
+    line-height: 34px;
+    background: #eee;
+}
+.list10 dl .h_btn .list_a_btn{ 
+    position: absolute;
+    bottom: 0;
+    right: 20px; 
+    background: none;
+}
+.h_bann{
+    background: #7a0909;
+}
+.pag{
+    width: 1190px;
+    height: 92px;
+    margin: 0 auto;
+    background: url(https://img.alicdn.com/imgextra/i2/O1CN01daHpe91eIt6V5eNbV_!!6000000003849-0-tps-1190-90.jpg) no-repeat;
+}
+
+
+
+
