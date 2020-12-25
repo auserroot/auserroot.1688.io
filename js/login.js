@@ -26,3 +26,7 @@ $('.msg_login').click(function(){
     $('.bottom').css('display','block');
     $('.bottom2').css('display','none');
 })
+//点击登录跳转页面
+// $('.btn').click(function(){
+//     $(location).attr('href', './index.html');
+// })
