@@ -42,10 +42,10 @@
                             </div>
                         </div> 
                         <div class="f_head">
-                            <a href="#">密码登录</a>
-                            <a href="#">短信登录</a>    
+                            <a href="#" class="m_login">密码登录</a>
+                            <a href="#" class="msg_login">短信登录</a>    
                         </div>
-                        <form action="">
+                        <form class="form1">
                             <div class="username">
                                 <i class="icon-user iconfont" title="用户名"></i>
                                 <input type="text" name="username" placeholder="会员名/邮箱/手机号">
@@ -63,6 +63,35 @@
                                 <a href="#">忘记密码</a>
                             </div>
                         </form>
+
+                        <form class="form2">
+                            <div class="username f_phonenum">
+                                <i class="icon-phone iconfont" title="请输入手机号"></i>
+                                <div class="pho_n" data-num="+86">
+                                    <select name="pho_num" class="pho_num">
+                                        <option value="+86">+86 中国大陆</option>
+                                        <option value="+852">+852 中国香港</option>
+                                        <option value="+853">+853 中国澳门</option>
+                                        <option value="+886">+886 中国台湾地区</option>
+                                        <option value="+82">+82 韩国</option>
+                                        <option value="+81">+81 日本</option>
+                                        <option value="+1">+1 美国</option>
+                                    </select>
+                                </div>
+                                <input type="text" name="phonenum" placeholder="请输入手机号" class="phonenum">
+                            </div>
+                            <div class="password">
+                                <i class="icon-sms iconfont" title="请输入验证码"></i>
+                                <input type="password" name="password" placeholder="请输入验证码">
+                            </div>
+                            <div class="btn">
+                                <input type="submit" value="登录" placeholder="请输入登录密码">
+                            </div>
+                            <div class="f_foot clearfix">
+                                <a href="#">免费注册</a>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>
@@ -130,7 +159,8 @@
     <div id="ser" class="s-box">
         <a class="s-btn"></a>
     </div>
-
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/login.js"></script>
     <script>
         // 联系客服
         var ser = document.getElementById('ser');
