@@ -392,5 +392,95 @@ body,html{
 }
 
 
+/* main */
+.main{
+    width: 100%;
+}
+.main_header {
+    height:134px ;
+}
+.main_header .h_top{
+    height: 96px;
+}
+.main_header .h_top .log{
+    line-height: 96px;
+    float: left;
+}
+.main_header .h_top .log a img:nth-child(1){
+    border-right: 1px solid #DFDFDF;
+}
 
+.main_header .h_top .search{
+    float: right;
+    width: 600px;
+    height: 40px;
+    margin-top: 26px;
+    margin-right: 50px;
+    border: 2px solid #FF5400;
+}
+.main_header .h_top .search input[type='button']{
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: #fff;
+    background: #FF5400;
+    float: right;
+}
+.main_header .h_top .search input[type='text']{
+    width: 495px;
+    height: 40px;
+    float: left;
+}
+.main_header .h_top .search input[type='text']::-webkit-input-placeholder{
+    text-indent: 12px;
+    color: #757575;
+}
+.main_header .h_bto{
+    height: 38px;
+    border-bottom: 1px solid #F1E9E9;
+}
+.main_header .h_bto .t_img{
+    width: 206px;
+    line-height: 38px;
+    font-size: 14px;
+    padding-left: 14px;
+    background: #FF5400;
+    float: left;
+}
+.main_header .h_bto .list_a{
+    float: left;
+    line-height: 38px;
+}
+.main_header .h_bto .list_a a{
+    display: inline-block;
+    margin: 0 24px;
+    font-size: 16px;
+    color: #333333;
+}
+.main_header .h_bto .list_a a:nth-child(1){
+    color: #FF5400;
+}
+.main_header .h_bto>a{
+    display: block;
+    float: right;
+    font-size: 14px;
+    color: #333333;
+    line-height: 38px;
+    margin-right: 10px
+}
+.main_header .h_bto .list_a a:hover{
+    color: #FF5400;
+}
 
+/* banner */
+.main_banner{
+    height: 440px;
+}
+
+.menu{
+    position: relative;
+    height: 400px;
+    width: 220px;
+    background-color: #444;
+    background-color: rgba(68,68,68,.8);
+}
