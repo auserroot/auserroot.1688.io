@@ -66,6 +66,16 @@ html,body{
     padding: 30px 34px 0 24px;
     border: 1px solid #CCCCCC;
     position: relative;
+    /* display: none; */
+}
+.bottom2{
+    width: 354px;
+    height: 310px;
+    margin-right: 6px;
+    padding: 30px 34px 0 24px;
+    border: 1px solid #CCCCCC;
+    position: relative;
+    display: none;
 }
 .bot_m i{
     position: absolute;
@@ -136,6 +146,33 @@ html,body{
 }
 .f_head a:hover{
     border-bottom: 2px solid #000;
+}
+.f_font{
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #3c3c3c;
+    margin-top: 9px;
+    padding-bottom: 8px;
+    font-weight: 700;
+}
+.erwi{
+    margin-top: 30px;
+    text-align: center;
+}
+.e_bot{
+    width: 188px;
+    margin: 0 auto;
+}
+.e_bot p{
+    display: inline-block;
+}
+.e_bot p a{
+color: #f27800;
+}
+.e_bot i{
+    font-size: 34px;
+    color: #f27800;
 }
 .username{
     width:302px;

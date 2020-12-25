@@ -17,3 +17,12 @@ $('.msg_login').click(function(){
       $('.p_num').html('+' + $(this).val());
       $('.pho_num').css('display','none');
   })
+  //iconfont点击
+  $('.pc_e').click(function(){
+      $('.bottom2').css('display','block');
+      $('.bottom').css('display','none');
+  })
+  $('.pc_c').click(function(){
+    $('.bottom').css('display','block');
+    $('.bottom2').css('display','none');
+})
