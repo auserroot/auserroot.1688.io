@@ -216,6 +216,35 @@ color: #f27800;
     font-size: 14px;
     line-height: 40px;
 }
+
+.form2 .password{
+    width:302px;
+    border: 1px solid #F4F2F2;
+    margin-bottom: 20px;
+}
+.form2 .password i {
+    display: inline-block;
+    width: 40px;
+    height: 42px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    color: white;
+    background: #ccc;
+}
+.form2 .password input{
+    width: 182px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 40px;
+}
+.form2 .password a{
+    width: 70px;
+    height: 40px;
+    font-size: 12px;
+    color: #666;
+}
+  
 .btn input{
     width:302px;
     height:40px;
