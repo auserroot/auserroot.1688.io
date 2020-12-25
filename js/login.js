@@ -10,23 +10,10 @@ $('.msg_login').click(function(){
     $('.msgs_login').css('border-bottom','2px solid #000')
 });
 //下拉菜单（电话国际编号）////
-        $('option').click(function () {
-            //  txt = '+' + parseInt($('.pho_num').html());
-            // console.log(txt);
-            // console.log(this);
-            $('.pho_n').attr("data-num",$(this).val());
-        });
-// console.log($('option'));
-// console.log($('option').html());
-// console.log('+'+parseInt($('option').html()))
-// console.log(parseInt("+86 中国大陆"));
-// var se = document.querySelector('.pho_num');
-// se.onclick = function () {
-//     var op = document.querySelectorAll('option');
-//     var dt = document.querySelector('.pho_n');
-//     for (var i = 0; i < op.length; i++) {
-//         op[i].onclick = function () {
-//             dt.setAttribute('data-num',this.value);
-//         }
-//     }
-// }
+  $('.p_num').click(function(){
+      $('.pho_num').css('display','block');
+  })
+  $('.pho_num li').click(function(){
+      $('.p_num').html('+' + $(this).val());
+      $('.pho_num').css('display','none');
+  })

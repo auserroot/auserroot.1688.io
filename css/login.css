@@ -216,7 +216,16 @@ html,body{
     background: url(https://gw.alicdn.com/tfs/TB1.8ugw.T1gK0jSZFrXXcNCXXa-200-200.png) no-repeat 48px 8px;
     background-size: 24px;
 }
-.pho_n::before{
+.pho_n span{
+    display: block;   
+    width: 65px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    color: #000;
+}
+/* .pho_n::before{
     content: attr(data-num);
     position: absolute;
     top: 0;
@@ -226,7 +235,7 @@ html,body{
     line-height: 40px;
     padding-left: 10px;
     color: #3c3c3c;
-}
+} */
 /* .num{
     height: 40px;
     text-align: center;
@@ -235,10 +244,10 @@ html,body{
     color: #000;
 } */
 .pho_num{
-    /* width: 65px; */
-    height: 40px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
     padding-left: 10px;
-    height: 40px;
     line-height: 40px;
     cursor: pointer;
     border-bottom: 0px;
@@ -246,14 +255,14 @@ html,body{
     border: none;
     appearance: none;
     outline: none;
-    color: rgba(0, 0, 0,0);
-    background: rgba(255, 255, 255,0);
-    /* display: none; */
+    /* color: rgba(0, 0, 0,0); */
+    background: rgba(255, 255, 255);
+    display: none;
 }
-select::-ms-expand { display: none; }
-.pho_num option{
+/* select::-ms-expand { display: none; } */
+/* .pho_num option{
     color: rgb(0, 0, 0);
-}
+} */
 .username .phonenum{
     margin-left: 65px;
     width: 190px;
