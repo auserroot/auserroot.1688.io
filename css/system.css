@@ -475,12 +475,97 @@ body,html{
 /* banner */
 .main_banner{
     height: 440px;
+    width: 100%;
+    position: relative;
 }
 
+/* 左 */
 .menu{
-    position: relative;
-    height: 400px;
     width: 220px;
-    background-color: #444;
-    background-color: rgba(68,68,68,.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu .menu_list{
+    height: 400px;
+    background-color: #696969;
+}
+.menu .menu_list li {
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+    text-indent: 34px;
+}
+.menu .menu_list li a{
+    color: #fff;
+}
+.menu_list li:nth-child(1){
+    background: url(../img/list.png)no-repeat 3px 0px;
+}
+.menu_list li:nth-child(2){
+    background: url(../img/list.png)no-repeat 3px -32px;
+}
+.menu_list li:nth-child(3){
+    background: url(../img/list.png)no-repeat 3px -64px;
+}
+.menu_list li:nth-child(4){
+    background: url(../img/list.png)no-repeat 3px -92px;
+}
+.menu_list li:nth-child(5){
+    background: url(../img/list.png)no-repeat 3px -122px;
+}
+.menu_list li:nth-child(6){
+    background: url(../img/list.png)no-repeat 3px -152px;
+}
+.menu_list li:nth-child(7){
+    background: url(../img/list.png)no-repeat 3px -180px;
+}
+.menu_list li:nth-child(8){
+    background: url(../img/list.png)no-repeat 3px -212px;
+}
+.menu_list li:nth-child(9){
+    background: url(../img/list.png)no-repeat 3px -242px;
+}
+.menu_list li:nth-child(10){
+    background: url(../img/list.png)no-repeat 3px -272px;
+}
+.menu_list li:nth-child(11){
+    background: url(../img/list.png)no-repeat 3px -302px;
+}
+.menu_list li:nth-child(12){
+    background: url(../img/list.png)no-repeat 3px -332px;
+}
+
+/* banner */
+.banner{
+    float: left;
+    width: 490px;
+}
+
+/* 右 */
+.warp_list{
+    float: right;
+    height: 400px;
+}
+.list_r{
+    float: left;
+    width: 185px;
+    text-align: center;
+}
+.r_pic a p:nth-child(1){
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF5400;
+}
+.r_pic a p:nth-child(2){
+    font-size: 12px;
+    color: #666;
+}
+.r_pic a img{
+    width: 120px;
+    height: 120px;
+}
+.r_pic a img.pic_b{
+    width: 170px;
+    height: 158px;
 }
