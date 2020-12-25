@@ -225,24 +225,7 @@ html,body{
     line-height: 40px;
     color: #000;
 }
-/* .pho_n::before{
-    content: attr(data-num);
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-transform: capitalize;
-    pointer-events: none;
-    line-height: 40px;
-    padding-left: 10px;
-    color: #3c3c3c;
-} */
-/* .num{
-    height: 40px;
-    text-align: center;
-    font-size: 16px;
-    line-height: 40px;
-    color: #000;
-} */
+
 .pho_num{
     position: absolute;
     top: 40px;
@@ -255,14 +238,9 @@ html,body{
     border: none;
     appearance: none;
     outline: none;
-    /* color: rgba(0, 0, 0,0); */
-    background: rgba(255, 255, 255);
+    background: rgb(255, 255, 255);
     display: none;
 }
-/* select::-ms-expand { display: none; } */
-/* .pho_num option{
-    color: rgb(0, 0, 0);
-} */
 .username .phonenum{
     margin-left: 65px;
     width: 190px;
