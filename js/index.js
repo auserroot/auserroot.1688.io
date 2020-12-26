@@ -83,3 +83,12 @@ $('.h_nav').mouseover(function(){
 $('.h_nav').mouseout(function(){
     $('.list10').css('display','none');
 })
+//banner .swiper-button-next .swiper-button-prev
+$('.banner').mouseover(function(){
+    $('.b_next').css('right','10px');
+    $('.b_prev').css('left','10px');
+});
+$('.banner').mouseout(function(){
+    $('.b_next').css('right','-100px');
+    $('.b_prev').css('left','-100px');
+});

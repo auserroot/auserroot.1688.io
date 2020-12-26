@@ -541,9 +541,30 @@ body,html{
 /* banner */
 .banner{
     float: left;
-    width: 490px;
     margin-left: 220px;
+    height: 400px;
+    width: 596px;
 }
+.banner .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-next, .swiper-button-prev{
+    width: 41px;
+    height: 41px;
+    background: rgba(255, 255, 255, .9);
+}
+:root{
+    --swiper-navigation-size:20px;
+    --swiper-theme-color:#A0A0A0;
+}
+.b_prev{
+    left: -100px;
+}
+.b_next{
+    right: -100px;
+}
+
 
 /* 右 */
 .warp_list{

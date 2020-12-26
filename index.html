@@ -467,6 +467,26 @@
                         <!-- banner -->
                         <div class="banner">
 
+                            <!-- swiper插件 -->
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="https://img.alicdn.com/tfs/TB1hrVcn2zO3e4jSZFxXXaP_FXa-600-400.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://img.alicdn.com/imgextra/i4/O1CN018c5GqK1CNBZtv0uuD_!!6000000000068-0-tps-600-400.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://img.alicdn.com/tfs/TB1m9iLRXY7gK0jSZKzXXaikpXa-600-400.jpg" alt=""></div>
+                                    <div class="swiper-slide"><img src="https://img.alicdn.com/tfs/TB1utWhrRFR4u4jSZFPXXanzFXa-600-400.jpg" alt=""></div>
+                                    <div class="swiper-slide" style="background-color: #fff;"></div>
+                                </div>
+                                <!-- 分页器 -->
+                                <div class="swiper-pagination"></div>
+                                
+                                <!-- 导航按钮 -->
+                                <div class="swiper-button-prev b_prev"></div>
+                                <div class="swiper-button-next b_next"></div>
+                                
+                                <!-- 滚动条 -->
+                                <!-- <div class="swiper-scrollbar"></div> -->
+                            </div>   
+
                         </div>
 
                         <!-- 右list -->
@@ -531,6 +551,25 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
