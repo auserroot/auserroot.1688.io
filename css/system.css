@@ -689,3 +689,57 @@ body,html{
 .list_r .r_pic .r_news li:nth-child(3) a{
     margin-left: 3px;
 }
+
+/* 主体 */
+.stor_list{
+    min-height: 100px;
+}
+
+
+
+
+/* footer */
+
+.footer{
+    height: 400px;
+    background-color:#282828 ;
+}
+.f_left{
+    float: left;
+    width: 218px;
+    padding-top: 148px;
+}
+.f_right{
+    float: right;
+    padding-top: 24px;
+    line-height: 128px;
+    width: 840px;
+}
+.line{
+    width: 840px;
+    height: 1px;
+    background: #949494;
+    margin-bottom: 16px;
+}
+.f_right .f_r_top img{
+    margin-left: 42px;
+}
+.f_right .f_r_bottom ul li{
+    float: left;
+    margin: 0 30px;
+}
+.f_right .f_r_bottom ul li dt{
+    font-size: 14px;
+    line-height: 44px;
+    color:#949494;
+}
+.f_right .f_r_bottom ul li dd{
+    font-size: 13px;
+    line-height: 26px;
+}
+.f_right .f_r_bottom ul li dd a{
+    color:#949494;
+}
+.f_right .f_r_bottom ul li dd a:hover{
+    text-decoration: underline;
+}
