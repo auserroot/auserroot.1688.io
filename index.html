@@ -555,22 +555,29 @@
     <script src="./js/index.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                }, 
+                on: {
+                    slideChange: function () {
+                        // console.log(this.activeIndex);
+                        var arr = ['#FF251B','#FF251B','#7A0909','#DE1C3E','#2C89C4','#fff','#FF251B'];
+                        $('.main_banner').css('background',arr[this.activeIndex]);
+                    },
+                },
+            });
     </script>
 </body>
 
