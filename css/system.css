@@ -477,10 +477,11 @@ body,html{
 .main_banner{
     height: 400px;
     width: 100%;
-    position: relative;
+    border:1px solid #F1E9E9;
 }
+
 .main_banner .container{
-    border-bottom:1px solid #F1E9E9;
+    position: relative;
 }
 /* 左 */
 .menu{

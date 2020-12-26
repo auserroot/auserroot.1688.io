@@ -92,3 +92,8 @@ $('.banner').mouseout(function(){
     $('.b_next').css('right','-100px');
     $('.b_prev').css('left','-100px');
 });
+//main_banner background 事件
+// $('.swiper-slide').change(function(){
+//     var arr = ['#fff','#FF251B','#7A0909','#DE1C3E','#2C89C4'];
+//     $('main_banner').css('background',arr[$(this).index()]);
+// });
