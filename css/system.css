@@ -451,6 +451,19 @@ body,html{
 .main_header .h_bto .list_a{
     float: left;
     line-height: 38px;
+    position: relative;
+}
+.main_header .h_bto .list_a span{
+    position: absolute;
+    top: 0;
+    left: 200px;
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    padding: 1px 6px 3px;
+    border-radius: 3px;
+    color: #fff;
+    background: #FD664D;
 }
 .main_header .h_bto .list_a a{
     display: inline-block;
@@ -762,7 +775,7 @@ body,html{
     margin-top: 10px;
 }
 ._bto{
-    min-height: 500px;
+    min-height: 472px;
 }
 .things_b{
     float: left;
@@ -822,8 +835,9 @@ body,html{
 .g_l2_right a p span:nth-child(2){
     float: right;
 }
-
-
+.c_2{
+    background: #F665B4;
+}
 .r_t_bot{
     width: 590px;
     height: 55px;
@@ -834,6 +848,66 @@ body,html{
     width: 114px;
     height: 55px;
 }
+
+.box_list{
+    width:100%;
+    min-height: 320px;
+}
+.top_l{
+    min-height: 315px;
+}
+.b_l_things{
+    float: left;
+    margin-bottom: 20px;
+    margin: 0 6px;
+    width: 224px;
+    height: 313px;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+.b_l_things:hover{
+    border: 1px solid #FF7300;
+}
+.b_l_things a{
+    display: inline-block;
+    overflow: hidden;
+}
+.b_l_things .b_l_t_a{
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
+    padding: 10px 10px 0;
+}
+.b_l_things .b_l_t_a:hover{
+    text-decoration: underline;
+}
+.b_l_things a img{
+    width: 222px;
+    height: 222px;
+}
+.b_l_things a img:hover{
+    transform: scale(1.2);
+    transition: all .3s;
+}
+.b_l_things p{
+    padding: 6px 10px 4px;
+    font-size: 12px;
+}
+.b_l_things p span{
+    display: inline-block;
+}
+.b_l_things p span:nth-child(1){
+    float: left;
+    color:#FF5400;
+}
+.b_l_things p span:nth-child(2){
+    float: right;
+    color: #999;
+    font-weight: normal;
+}
+
+
+
+
 
 
 
