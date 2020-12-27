@@ -786,7 +786,7 @@ body,html{
 .things_b{
     float: left;
     margin-left: 5px;
-    /* width: 590px; */
+    box-shadow: 0 0 4px #999;
 }
 .things2{
     width: 590px;
@@ -868,7 +868,7 @@ body,html{
     margin: 0 6px;
     width: 224px;
     height: 313px;
-    border: 1px solid rgba(255, 255, 255, 0);
+    border: 1px solid rgba(0, 0, 0, .1);
 }
 .b_l_things:hover{
     border: 1px solid #FF7300;
