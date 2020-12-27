@@ -855,6 +855,7 @@ body,html{
 }
 .top_l{
     min-height: 315px;
+    margin-bottom: 20px;
 }
 .b_l_things{
     float: left;
