@@ -505,6 +505,7 @@ body,html{
     left: 0;
 }
 .menu .menu_list{
+    position: relative;
     height: 400px;
     background-color: #696969;
 }
@@ -513,6 +514,10 @@ body,html{
     line-height: 30px;
     color: #fff;
     text-indent: 34px;
+}
+
+.menu .menu_list li:hover{
+    background: #FF5400;
 }
 .menu .menu_list li a{
     color: #fff;
@@ -552,6 +557,85 @@ body,html{
 }
 .menu_list li:nth-child(12){
     background: url(../img/list.png)no-repeat 3px -332px;
+}
+
+/* 二级菜单 */
+.menu_list_two{
+    /* width: 972px; */
+    width: 0;
+    height: 374px;
+    padding: 26px 0 0 30px;
+    position: absolute;
+    top: 0px;
+    left: 220px;
+    z-index: 9999;
+    background: #fff;
+    display: none;
+}
+.menu_list_two p.m_l_t{
+    border-left:5px solid #FF5400;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 16px;
+    text-indent: 12px;
+}
+.menu .menu_list_two .m_l_t a{
+    color: #333;
+    font-size: 20px;
+}
+.menu .menu_list_two .m_l_t a:hover{
+    color: #FF5400;
+}
+.m_l_t_box{
+    width: 200px;
+    height: 160px;
+    float: left;
+    margin-right: 32px;
+}
+.box_h{
+    color: #333;
+    font-size: 14px;
+    line-height: 34px;
+    border-bottom:1px solid  #FF5400 ;
+    text-indent: 0;
+}
+.menu .m_l_t_box .box_h a{
+    color: #333;
+}
+.menu .m_l_t_box .box_h a:hover{
+    color: #FF5400 ;
+}
+.box_list{
+    text-indent: 0;
+    padding-top: 10px;
+}
+.menu .box_warp .m_l_t_box .box_list a{
+    color: #333;
+    font-size: 14px;
+    line-height: 32px;
+    display: inline-block;
+    margin-right: 24px;
+}
+.menu .box_warp .m_l_t_box .box_list a:nth-child(6){
+    margin-right: 12px;
+    margin-left: -12px;
+}
+.menu .box_warp .m_l_t_box .box_list a:hover{
+    color: #FF5400;
+}
+.two{
+    width: 453px;
+}
+._ttr{
+    height: 160px;
+}
+.menu .box_warp .two ._ttr a{
+    display: inline-block;
+    margin: 0 5px;
+}
+.box_list a img{
+    width: 100px;
+    height: 100px;
 }
 
 /* banner */

@@ -97,5 +97,13 @@ $('.banner').mouseout(function(){
 //     $('.main_banner').addClass('c2');    
 // });
 
+// 二级菜单
+$('.menu_list').children().mouseover(function(){
+    $(this).children('.menu_list_two').css('display', 'block');
+    $(this).children('.menu_list_two').animate({width:'972px'},300);
+})
+$('.menu_list').children().mouseout(function(){
+    $(this).children('.menu_list_two').css('display', 'none');
+})
 
 
