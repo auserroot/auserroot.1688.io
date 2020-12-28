@@ -83,3 +83,12 @@ $('.h_nav').mouseover(function(){
 $('.h_nav').mouseout(function(){
     $('.list10').css('display','none');
 })
+
+//下拉菜单（电话国际编号）////
+$('.p_num').click(function(){
+    $('.pho_num').css('display','block');
+})
+$('.pho_num li').click(function(){
+    $('.p_num').html('+' + $(this).val());
+    $('.pho_num').css('display','none');
+})

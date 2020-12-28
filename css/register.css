@@ -385,11 +385,247 @@ body,html{
 
 
 /* main */
+.main{
+    height: 790px;
+}
+/* 头部 */
+.header_m{
+    border-bottom: 1px solid #eee;
+}
+.header_h{
+    height: 70px;
+    padding-top: 20px;
+    margin-left: 45px;
+}
+.a{
+    float: left;
+    width: 160px;
+    height: 38px;
+    line-height: 50px;
+    margin: 8px 12px 0;
+    text-indent: -9999px;
+    background: url(https://login.1688.com/img/logo.png) 50px 0 no-repeat;
+}
+.txt{
+    float: left;
+    padding-left: 10px;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #000;
+    background: url(https://login.1688.com/img/split.png) -160px top no-repeat;
+}
+.header_bot{
+    width: 462px;
+    margin: 0 auto;
+}
+.header_bot a{
+    display: inline-block;
+    width: 228px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    color: #000;
+    border-bottom:1px solid #eee;
+
+}
+.header_bot a:hover{
+    color: #f27800;
+    border-bottom:1px solid #f27800;
+}
+
+.main_txt{
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.form_box{
+    position: relative;
+}
+.form_box form{
+    width: 682px;
+    margin: 0 auto;
+}
+.form_box form div{
+    margin: 18px 10px;
+}
+.form_box form div label{
+    display: inline-block;
+    width: 200px;
+    height: 36px;
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}
+.form_box form div input{
+    width: 280px;
+    height: 36px;
+    border: 1px solid #ddd;
+}
+.form_box form div input::-webkit-input-placeholder{
+    color: #999;
+    text-indent: 12px;
+}
+.form_box form div:nth-child(6){
+    text-align: center;
+}
+.form_box form div:nth-child(6) input{
+    width: 14px;
+    height: 14px;
+}
+.form_box form div:nth-child(6) p{
+    display: inline-block;
+    width: 240px;
+    color: #333;
+}
+.form_box form div:nth-child(6) p a{
+    color: #f27800;
+}
+.form_box form div button{
+    width: 106px;
+    height: 38px;
+    background: #FF6000;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    color: #fff;
+}
 
 
+/* 手机号 */
+.form_box form .phone_input{
+    width: 280px;
+    height: 36px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+
+.form_box form .pho_n{
+    margin: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.pho_n span{
+    display: inline-block;   
+    width: 50%;
+    height: 36px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 36px;
+    color: #000;
+    border-right: 1px solid #ddd;
+
+}
+.form_box form div input#phonenum{
+    display: inline-block;
+    width: 48%;
+    height: 100%;
+    border: none;
+}
+.p_num b{
+    display: inline-block;
+    margin: 0 12px;
+    line-height: 36px;
+    font-size: 12px;
+}
+.p_num i{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 36px;
+    margin-right: 4px;
+    color: #999;
+}
+
+.pho_num{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    padding-left: 10px;
+    line-height: 40px;
+    cursor: pointer;
+    border-bottom: 0px;
+    padding-right: 14px;
+    border: none;
+    appearance: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    display: none;
+}
 
 
+/* 验证码 */
+.form_box form div:nth-child(5) div{
+    display: inline-block;
+    margin: 0;
+    width: 282px;
+    height: 38px;
+    border: 1px solid #eee;
+    background:#E8E8E8;
+    text-align: center;
+    line-height: 36px;
+}
+span.huakuai{
+    background: -webkit-gradient(linear,left top,right top,color-stop(0,#4d4d4d),color-stop(.4,#4d4d4d),color-stop(.5,#fff),color-stop(.6,#4d4d4d),color-stop(1,#4d4d4d));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: move 3s infinite;
+    -webkit-text-size-adjust: none;
+}
 
+.form_box form div:nth-child(5) div em{
+    display: inline-block;
+    width: 36px;
+    height: 38px;
+    background: #fff;
+    color: #999;
+    text-align: center;
+    margin-left: -74px;
+}
+
+@keyframes move {
+    0% {
+        background-position: -200px 0;
+    }
+    100% {
+        background-position: 200px 0;
+    }
+}
+
+
+.help {
+    border: 1px solid #DDDDDD;
+    padding: 20px 0 0 20px;
+    width: 180px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.help h3{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+.help ul{
+    width: 138px;
+    height: 260px;
+}
+.help ul li{
+    border-bottom: 1px solid #ddd;
+}
+.help ul li:last-child{
+    border-bottom:none;
+}
+.help ul li a{
+    font-size: 12px;
+    color: #999;
+    line-height: 32px;
+}
 
 /* 尾部 */
 .footer{
@@ -404,38 +640,17 @@ body,html{
     color: #FF7300;
 }
 .footer_top{
-    height: 48px;
-    margin-left: -50px;
-    padding: 0 25px;
-    font-size: 12px;
-    border-bottom: 3px solid #FF7300;
-}
-.footer_top div a{
-    color: #666;
-}
-.right{
-    margin-top: 4px;
-}
-.right span{
-    display: inline-block;
-}
-.right .span1{
-    float: left;
-}
-.right .span2{
-    float: right;
-}
-.right .span2 a{
-    color: #4388C3;
-}
-.right .span2 a:hover{
-    color: #FF7300;
+    height: 4px;
+    background: #FF7300;
 }
 .footer_bottom{
     height: 70px;
 }
+.footer_bottom a{
+    font-size: 12px;
+}
 .bot_t{
-    width: 686px;
+    width: 825px;
     margin: 12px auto 0;
 }
 .bot_t span{
@@ -446,7 +661,7 @@ body,html{
     color: #999;
 }
 .bot_bot{
-    width: 992px;
+    width: 1002px;
     margin: 12px auto 0 -40px;
 }
 .bot_bot span{
@@ -456,40 +671,6 @@ body,html{
 .bot_bot .f_b{
     width: 40%;
     margin: 0 auto;
-}
-
-/*联系客服*/
-.s-box {
-    position: fixed;
-    right: 3px;
-    top: 200px;
-    width: 40px;
-    height: 40px;
-    display: block;
-    z-index: 1000000;
-}
-.s-btn {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    cursor: pointer;
-    background: url(https://cbu01.alicdn.com/cms/upload/2016/968/985/2589869_204222439.png) no-repeat 0 0;
-}
-.s-btn2 {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: #FF7300;
-    text-align: center;
-    line-height: 20px;
-    display: block;
-    cursor: pointer;
-    background-color: #E6E6E6;
 }
 
 
