@@ -516,9 +516,6 @@ body,html{
     text-indent: 34px;
 }
 
-.menu .menu_list li:hover{
-    background: #FF5400;
-}
 .menu .menu_list li a{
     color: #fff;
 }
@@ -558,6 +555,48 @@ body,html{
 .menu_list li:nth-child(12){
     background: url(../img/list.png)no-repeat 3px -332px;
 }
+
+
+.menu_list li:nth-child(1):hover{
+    background: #FF5400 url(../img/list.png)no-repeat 3px 0px;
+}
+.menu_list li:nth-child(2):hover{
+    background: #FF5400 url(../img/list.png)no-repeat 3px -32px;
+}
+.menu_list li:nth-child(3):hover{
+    background: #FF5400 url(../img/list.png)no-repeat 3px -64px;
+}
+.menu_list li:nth-child(4):hover{
+    background: #FF5400 url(../img/list.png)no-repeat 3px -92px;
+}
+.menu_list li:nth-child(5):hover{
+    background: #FF5400 url(../img/list.png)no-repeat 3px -122px;
+}
+.menu_list li:nth-child(6):hover{
+    background: #FF5400 url(../img/list.png)no-repeat 3px -152px;
+}
+.menu_list li:nth-child(7):hover{
+    background:#FF5400 url(../img/list.png)no-repeat 3px -180px;
+}
+.menu_list li:nth-child(8):hover{
+    background:#FF5400 url(../img/list.png)no-repeat 3px -212px;
+}
+.menu_list li:nth-child(9):hover{
+    background:#FF5400 url(../img/list.png)no-repeat 3px -242px;
+}
+.menu_list li:nth-child(10):hover{
+    background:#FF5400 url(../img/list.png)no-repeat 3px -272px;
+}
+.menu_list li:nth-child(11):hover{
+    background:#FF5400 url(../img/list.png)no-repeat 3px -302px;
+}
+.menu_list li:nth-child(12):hover{
+    background:#FF5400 url(../img/list.png)no-repeat 3px -332px;
+}
+.menu_list li:nth-child(13):hover{
+    background:#FF5400;
+}
+
 
 /* 二级菜单 */
 .menu_list_two{
