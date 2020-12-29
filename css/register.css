@@ -427,11 +427,12 @@ body,html{
     line-height: 40px;
     color: #000;
     border-bottom:1px solid #eee;
-
+    text-decoration: none;
 }
 .header_bot a:hover{
     color: #f27800;
     border-bottom:1px solid #f27800;
+    text-decoration: none;
 }
 
 .main_txt{
@@ -456,6 +457,7 @@ body,html{
     display: inline-block;
     width: 200px;
     height: 36px;
+    line-height: 36px;
     text-align: right;
     font-size: 14px;
     color: #666;
@@ -465,23 +467,29 @@ body,html{
     height: 36px;
     border: 1px solid #ddd;
 }
+.form_box form div input[type='radio']{
+    display: inline-block;
+    width: 2%;
+    height: 16px;
+    margin-left: 20px;
+}
 .form_box form div input::-webkit-input-placeholder{
     color: #999;
     text-indent: 12px;
 }
-.form_box form div:nth-child(6){
+.form_box form div.f_b_checkbox{
     text-align: center;
 }
-.form_box form div:nth-child(6) input{
+.form_box form div.f_b_checkbox input{
     width: 14px;
     height: 14px;
 }
-.form_box form div:nth-child(6) p{
+.form_box form div.f_b_checkbox p{
     display: inline-block;
     width: 240px;
     color: #333;
 }
-.form_box form div:nth-child(6) p a{
+.form_box form div.f_b_checkbox p a{
     color: #f27800;
 }
 .form_box form div button{
@@ -566,7 +574,7 @@ body,html{
 
 
 /* 验证码 */
-.form_box form div:nth-child(5) div{
+.form_box form div.f_b_slider div{
     display: inline-block;
     margin: 0;
     width: 282px;
@@ -584,10 +592,10 @@ span.huakuai{
     -webkit-text-size-adjust: none;
 }
 
-.form_box form div:nth-child(5) div.sliding{
+.form_box form div.f_b_slider div.sliding{
     position: relative;
 }
-.form_box form div:nth-child(5) div em{
+.form_box form div.f_b_slider div em{
     display: inline-block;
     width: 36px;
     height: 38px;
@@ -686,4 +694,20 @@ span.huakuai{
     margin: 0 auto;
 }
 
-
+/* bootstrap模态框 */
+.b_ttr{
+    display: none;
+}
+.b_close{
+    text-align: center;
+}
+.mf_bc{
+    background: #FF7300;
+    color: #fff;
+    border: none;
+}
+.mf_bc:hover{
+    background: #FF7300;
+    color: #fff;
+    border: none;
+}

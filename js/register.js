@@ -90,7 +90,18 @@ $('.header_bot a').click(function () {
     if($(this).css({'color':'#f27800','border-bottom':'1px solid #f27800'})){
         $(this).siblings().css({'color': '#000','border-bottom':'1px solid #eee'})
     }
-  })
+  });
+$('.header_bot a:nth-child(1)').click(function () {
+    $('.main_txt').html('有企业营业执照（含个体工商户）的用户请注册。权益如下：做企业实名认证；作为卖家身份开店；作为买家身份采购。');
+    var t=true;
+    if(t){
+        var str = " <div> <label for='name'>联系人姓名:</label><input type='text' id='name' placeholder='请输入真实姓名'></div><div> <label for='cpname'>企业名称:</label><input type='text' id='cpname' placeholder='营业执照上的公司名称'></div><div> <label>贸易身份:</label><input type='radio'>我要销售 <input type='radio'>我要采购 <input type='radio'>两者都是</div>"
+        $('.f_p_box').after(str);
+        return t=false;    
+    }else{
+        
+    }
+});
 
 //下拉菜单（电话国际编号）////
 $('.p_num').click(function(){
@@ -150,8 +161,10 @@ $(function(){
           $('.sliding > em').animate({left:'0px'},282);
           $('.sliding > span').animate({width:'0px'},282);
         }
-        $(document).get(0).onmousemove=null; //最后让 鼠标移动 和 鼠标松开 事件停止 
         $(document).get(0).onmouseup=null;
       });
     });
   });
+//模态框
+//打开页面加载模态框
+$('#myModal').modal();
