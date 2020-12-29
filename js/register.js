@@ -84,6 +84,14 @@ $('.h_nav').mouseout(function(){
     $('.list10').css('display','none');
 })
 
+// 注册
+$('.header_bot a').click(function () {
+    $(this).css({'color':'#f27800','border-bottom':'1px solid #f27800'})
+    if($(this).css({'color':'#f27800','border-bottom':'1px solid #f27800'})){
+        $(this).siblings().css({'color': '#000','border-bottom':'1px solid #eee'})
+    }
+  })
+
 //下拉菜单（电话国际编号）////
 $('.p_num').click(function(){
     $('.pho_num').css('display','block');
@@ -95,6 +103,12 @@ $('.pho_num').mouseout(function(){
     $('.pho_num').css('display','none');
 })
 $('.pho_num li').click(function(){
-    $('.p_num').html('+' + $(this).val());
+    $('.p_n_num').html('+' + $(this).val());
+    $('.p_n_txt').html($(this).html().match(/[\u4e00-\u9fa5]{2,}/g))
     $('.pho_num').css('display','none');
 })
+
+//验证
+$('_h_').mousedown(function(e){ 
+   
+});
