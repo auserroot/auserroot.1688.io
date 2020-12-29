@@ -88,6 +88,12 @@ $('.h_nav').mouseout(function(){
 $('.p_num').click(function(){
     $('.pho_num').css('display','block');
 })
+$('.pho_num').mousemove(function(){
+    $('.pho_num').css('display','block');
+})
+$('.pho_num').mouseout(function(){
+    $('.pho_num').css('display','none');
+})
 $('.pho_num li').click(function(){
     $('.p_num').html('+' + $(this).val());
     $('.pho_num').css('display','none');
