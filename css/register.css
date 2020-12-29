@@ -502,7 +502,9 @@ body,html{
     text-align: center;
     color: #fff;
 }
-
+.f_b_form2{
+    display: none;
+}
 
 /* 手机号 */
 .form_box form .phone_input{
