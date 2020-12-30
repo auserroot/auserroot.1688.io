@@ -21,7 +21,6 @@ body,html{
 }
 .h_rigth span.phone{
     display: inline-block;
-    /* width: 60px; */
     height: 30px;
     padding-left: 14px;
     padding-right: 6px;
@@ -41,57 +40,70 @@ body,html{
 .h_rigth span a{
     display: inline-block;
     font-size: 14px;
-    /* color: #000; */
     line-height: 30px;
     margin-top: -3px;
 }
 .h_rigth a:hover{
     color:  #f27800;
-    text-decoration: underline;
 }
 .redbg{
-    position: relative;
-    /* margin-left: 6px; */
-    /* padding-left: 14px; */
-    /* background: url(https://img.alicdn.com/tfs/TB1EV4XrAvoK1RjSZPfXXXPKFXa-12-16.png) no-repeat 0 3px; */
-}
+    position: relative;}
 .list1{
     position: absolute;
-    top: 22px;
+    top: 26px;
     left: -12px;
     padding: 16px 0 0 7px;
     width: 368px;
     height: 188px;
     background-color: #fff;
     border: 1px solid #eee;
-    display: none;
+    /* display: none; */
 }
-.list1 p span{
-    display: inline-block;
-    margin: 0 13px;
-    padding-left: 20px;
-    line-height: 28px;
-    color:#f27800 ;
-    background: url(https://img.alicdn.com/tfs/TB140FnrkvoK1RjSZFNXXcxMVXa-14-14.png) no-repeat 0 6px;
+.list1_top{
+    height: 60px;
 }
-.list1_p1{
-    font-size: 15px;
-    color: #222;
-    margin-left: 15px;
-    margin-bottom: 10px;
-}
-.close{
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
-    background: url(https://img.alicdn.com/tfs/TB1WJ8lrhTpK1RjSZFKXXa2wXXa-12-10.png) no-repeat;
-}
-/* .redbg a:hover .list1{
+.list1_top>a{
     display: block;
-} */
+    float: left;
+}
+.list1_top a img{
+    width: 58px;
+    height: 58px;
+    border: 1px solid #eee;
+}
+.l_top_box{
+    float: left;
+}
+.l_top_box p{
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #555;
+}
+.l_top_box p:nth-child(1){
+    width: 46px;
+    background: #e23842;
+    border-radius: 5px;
+}
+.l_top_box p:nth-child(1) a{
+    color: #fff;
+}
+.l_b_clo{
+    position: absolute;
+    top:20px;
+    right: 0;
+}
+.l_b_clo a{
+    color: #336799;
+}
+.list1_top p span {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+
+
+
 .sign{
     margin-left: 6px;
 }
