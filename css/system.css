@@ -1045,7 +1045,7 @@ body,html{
 
 .footer{
     height: 400px;
-    width: 1190px;
+    width: 100%;
     background-color:#282828 ;
 }
 .f_left{
