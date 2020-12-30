@@ -52,9 +52,10 @@ body,html{
     position: absolute;
     top: 26px;
     left: -12px;
-    padding: 16px 0 0 7px;
+    padding: 20px 0 0 24px;
     width: 368px;
     height: 188px;
+    box-sizing: border-box;
     background-color: #fff;
     border: 1px solid #eee;
     display: none;
@@ -100,7 +101,9 @@ body,html{
     display: inline-block;
     margin: 0 6px;
 }
-
+.list1_bot{
+    padding-top: 40px;
+}
 
 
 
