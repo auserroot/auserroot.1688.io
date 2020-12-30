@@ -57,7 +57,7 @@ body,html{
     height: 188px;
     background-color: #fff;
     border: 1px solid #eee;
-    /* display: none; */
+    display: none;
 }
 .list1_top{
     height: 60px;
