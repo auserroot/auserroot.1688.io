@@ -83,3 +83,8 @@ $('.h_nav').mouseover(function(){
 $('.h_nav').mouseout(function(){
     $('.list10').css('display','none');
 })
+
+//main  h_bot
+$('h_bot').children().click(function(){
+    $(this).css({'color':'#f27800','border-bottom':'1px solid #f27800'});
+});

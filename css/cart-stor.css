@@ -11,10 +11,12 @@ body,html{
     margin: 0 auto;
 }
 .header{
+    width: 1052px;
     height: 24px;
     color: #555;
     padding: 4px 0;
     border-bottom: 1px solid #eee;
+    padding:0 36px;
 }
 .header a{
     color: #555;
@@ -116,7 +118,7 @@ body,html{
 .h_left{
     position: relative;
     float: left;
-    margin-left: 228px;
+    margin-left: 96px;
 }
 .h_left span{
     display: inline-block;
@@ -397,3 +399,48 @@ body,html{
 }
 
 
+
+/* main */
+.main{
+    height: 790px;
+}
+/* 头部 */
+.header_m{
+    border-bottom: 1px solid #eee;
+}
+.header_h{
+    height: 70px;
+    padding-top: 20px;
+    margin-left: 45px;
+}
+.a{
+    float: left;
+    width: 160px;
+    height: 38px;
+    line-height: 50px;
+    margin: 8px 12px 0;
+    text-indent: -9999px;
+    background: url(https://login.1688.com/img/logo.png) 50px 0 no-repeat;
+}
+.txt{
+    float: left;
+    padding-left: 10px;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #000;
+    background: url(https://login.1688.com/img/split.png) -160px top no-repeat;
+}
+
+.h_bot{
+    height: 24px;
+    padding-left: 45px;
+} 
+.h_bot a{
+    display: inline-block;
+    width: 152px;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #000;
+} 
