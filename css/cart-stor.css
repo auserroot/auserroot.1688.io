@@ -587,7 +587,6 @@ body,html{
     overflow: hidden;
     font-size: 0;
     *display: block;
-    *layout-grid-line: 100%;
 }
 .mod-recommend .img_wrap{
     position: relative;
