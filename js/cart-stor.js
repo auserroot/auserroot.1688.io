@@ -85,6 +85,9 @@ $('.h_nav').mouseout(function(){
 })
 
 //main  h_bot
-$('h_bot a').click(function(){
+$('.h_bot').children().click(function(){
     $(this).css({'color':'#f27800','border-bottom':'1px solid #f27800'});
+    if($(this).css({'color':'#f27800','border-bottom':'1px solid #f27800'})){
+        $(this).siblings().css({'color': '#000','border-bottom':'1px solid #eee'})
+    }
 });

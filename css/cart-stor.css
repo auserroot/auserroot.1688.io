@@ -4,6 +4,8 @@ body,html{
 }
 .warp{
     width: 100%;
+    background: #f7f7f7
+    ;
 }
 .container{
     width: 1190px;
@@ -444,3 +446,123 @@ body,html{
     color: #000;
     border-bottom:1px solid #eee;
 } 
+
+#select-all{
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+}
+.m_list ul{
+    height: 40px;
+    line-height: 40px;
+}
+.m_list ul li{
+    float: left;
+}
+.m_list ul li.all{
+    margin: 0 38px;
+}
+.m_list ul li.goods{
+    margin-left:50px;
+}
+.m_list ul li.num{
+    margin-left:460px;
+}
+.m_list ul li.pric{
+    margin-left:160px;
+}
+.m_list ul li.yhu{
+    margin-left:60px;
+}
+.m_list ul li.mon{
+    margin-left:120px;
+}
+.goods_list{
+    min-height: 360px;
+    background: #fff;
+}
+
+
+
+
+
+
+/* 尾部 */
+.footer{
+    width: 1380px;
+    height: 122px;
+    margin: 0 auto;
+}
+.footer a{
+    font-size: 10px;
+    color: #000;
+}
+.footer a:hover{
+    color: #FF7300;
+}
+.footer_bottom{
+    height: 70px;
+}
+.bot_t{
+    width: 880px;
+    margin: 12px auto 0;
+}
+.bot_t span{
+    color: #999;
+    margin: 0 4px;
+}
+.bot_t .copyright{
+    color: #999;
+}
+.bot_bot{
+    /* width: 992px; */
+    margin: 12px auto;
+    margin-left: -76px;
+}
+.bot_bot a{
+    font-size: 12px;
+}
+.bot_bot span{
+    color: #999;
+    margin: 0 4px;
+}
+.bot_bot .f_b{
+    width: 40%;
+    margin: 0 auto;
+}
+
+/*联系客服*/
+.s-box {
+    position: fixed;
+    right: 3px;
+    top: 200px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    z-index: 1000000;
+}
+.s-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    cursor: pointer;
+    background: url(https://cbu01.alicdn.com/cms/upload/2016/968/985/2589869_204222439.png) no-repeat 0 0;
+}
+.s-btn2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FF7300;
+    text-align: center;
+    line-height: 20px;
+    display: block;
+    cursor: pointer;
+    background-color: #E6E6E6;
+}
+
+
