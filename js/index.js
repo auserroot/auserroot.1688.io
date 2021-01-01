@@ -101,7 +101,10 @@ $('.menu_list').children().mouseout(function(){
     $(this).children('.menu_list_two').css('display', 'none');
 })
 
-$('.box_list').mouseover(function(){
+
+
+//猜你喜欢 goods——list
+$('.top_l').mouseover(function(){
     $.ajax({
         type: "get",
         url: "../json/1688.json",
