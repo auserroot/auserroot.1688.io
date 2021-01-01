@@ -119,7 +119,7 @@ $('.box_list').mouseover(function(){
                 <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
                 <a href="#" class="b_l_t_a">${item.title}</a>
             </div>
-            `).appendTo(`<div class="top_l clearfix"></div>`)).appendTo($('.top_l'));
+            `).appendTo(`<div class="top_l clearfix"></div>`)).appendTo($('.box_list'));
             });
         }
     });
