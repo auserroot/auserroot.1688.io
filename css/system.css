@@ -5,6 +5,9 @@ body,html{
 .warp{
     width: 100%;
 }
+.w_height{
+    height: 100%;
+}
 .container{
     width: 1190px;
     height: 100%;
@@ -15,6 +18,9 @@ body,html{
     color: #555;
     padding: 4px 0;
     border-bottom: 1px solid #eee;
+}
+.hander_h{
+    height: 25px;
 }
 .header a{
     color: #555;
