@@ -101,37 +101,25 @@ $('.menu_list').children().mouseout(function(){
     $(this).children('.menu_list_two').css('display', 'none');
 })
 
-
-//goods_list
-$('.box_list').mouseover(function () {
+$('.box_list').mouseover(function(){
     $.ajax({
         type: "get",
         url: "../json/1688.json",
         dataType: "json",
         success: function (data) {
-
             data.forEach(function (item) {
-                console.log(item)
-                // $('.box_list').append(`
-                //     <div class="top_l clearfix _b_l">
-                //     </div>
-                // `);
-                var str ="<div class='top_l clearfix _b_l'>"
-                for (var i = 0; i < 5; i++) {
-                    str += `
-                    <div class="b_l_things">
-                        <a href="#">
-                            <img src="${item.pic}" alt="">
-                        </a>
-                        <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
-                        <a href="#" class="b_l_t_a">${item.title}</a>
-                    </div>`
-                }
-                str +='</div>'
-                $('.box_list').append(str);
-                //  $('._b_l').warp(str)
+                if(item<5){
+                $('.box_list').append(`
+                <div class="b_l_things">
+                <a href="#">
+                    <img src="${item.pic}" alt="">
+                </a>
+                <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
+                <a href="#" class="b_l_t_a">${item.title}</a>
+            </div>
+            `)
+        }
             });
         }
     });
 });
-
