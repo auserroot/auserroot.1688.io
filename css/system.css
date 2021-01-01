@@ -979,14 +979,14 @@ body,html{
     min-height: 320px;
     margin-bottom: 20px;
 }
-/* .top_l{
+.top_l{
     min-height: 315px;
     margin-bottom: 20px;
-} */
+}
 .b_l_things{
     float: left;
     margin-bottom: 20px;
-    margin: 20px 6px;
+    margin: 14px 6px;
     width: 224px;
     height: 313px;
     border: 1px solid rgba(0, 0, 0, .1);
