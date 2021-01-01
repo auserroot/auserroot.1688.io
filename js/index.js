@@ -104,14 +104,14 @@ $('.menu_list').children().mouseout(function(){
 
 
 //猜你喜欢 goods——list
-$('.top_l').mouseover(function(){
+$('.box_list').mouseover(function(){
     $.ajax({
         type: "get",
         url: "../json/1688.json",
         dataType: "json",
         success: function (data) {
             data.forEach(function (item) {
-                $('.box_list').append(`
+                $($(`
                 <div class="b_l_things">
                 <a href="#">
                     <img src="${item.pic}" alt="">
@@ -119,7 +119,7 @@ $('.top_l').mouseover(function(){
                 <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
                 <a href="#" class="b_l_t_a">${item.title}</a>
             </div>
-            `)
+            `).appendTo(`<div class="top_l clearfix"></div>`)).appendTo($('.top_l'));
             });
         }
     });
