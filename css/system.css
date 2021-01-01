@@ -980,6 +980,7 @@ body,html{
 .box_list{
     width:100%;
     min-height: 320px;
+    margin-bottom: 20px;
 }
 .top_l{
     min-height: 315px;
