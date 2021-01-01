@@ -109,30 +109,30 @@ $('.box_list').mouseover(function () {
         success: function (data) {
             data.forEach(function (item) {
                
-                    var str = " <div class='top_l clearfix'>";
-                     if (item < 5) {
-                         str += `<div class="b_l_things">
-                                    <a href="#">
-                                        <img src="${item.pic}" alt="">
-                                    </a>
-                                    <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
-                                    <a href="#" class="b_l_t_a">${item.title}</a>
-                                </div>`;
-                     };
-                    str += '</div>' ;
-                    $('.box_list').append(str);
-            //         $('.box_list').append(`
-            //         <div class="top_l clearfix">
-            //         </div>
-            //     `).append(`
-            //     <div class="b_l_things">
-            //     <a href="#">
-            //         <img src="${item.pic}" alt="">
-            //     </a>
-            //     <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
-            //     <a href="#" class="b_l_t_a">${item.title}</a>
-            // </div>
-            // `)
+                    // var str = " <div class='top_l clearfix'>";
+                    //  if (item < 5) {
+                    //      str += `<div class="b_l_things">
+                    //                 <a href="#">
+                    //                     <img src="${item.pic}" alt="">
+                    //                 </a>
+                    //                 <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
+                    //                 <a href="#" class="b_l_t_a">${item.title}</a>
+                    //             </div>`
+                    //  }
+                    // str += '</div>' ;
+                    // $('.box_list').append(str);
+                    $('.box_list').append($(`
+                <div class="b_l_things">
+                <a href="#">
+                    <img src="${item.pic}" alt="">
+                </a>
+                <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
+                <a href="#" class="b_l_t_a">${item.title}</a>
+            </div>
+            `).appendTo(`
+            <div class="top_l clearfix">
+            </div>
+        `))
                 // }
             });
         }
