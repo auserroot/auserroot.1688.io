@@ -101,14 +101,15 @@ $('.menu_list').children().mouseout(function(){
     $(this).children('.menu_list_two').css('display', 'none');
 })
 
-$('.box_list').mouseover(function(){
+$('.box_list').mouseover(function () {
     $.ajax({
         type: "get",
         url: "../json/1688.json",
         dataType: "json",
         success: function (data) {
             data.forEach(function (item) {
-                $('.box_list').append(`
+                if (item < 5) {
+                    $('.box_list').append(`
                     <div class="top_l clearfix">
                     </div>
                 `).append(`
@@ -120,6 +121,7 @@ $('.box_list').mouseover(function(){
                 <a href="#" class="b_l_t_a">${item.title}</a>
             </div>
             `)
+                }
             });
         }
     });
