@@ -117,17 +117,16 @@ $('.box_list').mouseover(function () {
                     </div>
                 `);
                 for (var i = 0; i < 5; i++) {
-                    $('._b_l').warp(`
+                var str = `
                     <div class="b_l_things">
                         <a href="#">
                             <img src="${item.pic}" alt="">
                         </a>
                         <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
                         <a href="#" class="b_l_t_a">${item.title}</a>
-                    </div>
-                `)
+                    </div>`
                 }
-                
+                 $('._b_l').warp(str)
             });
         }
     });
