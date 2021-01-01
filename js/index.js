@@ -111,6 +111,7 @@ $('.box_list').mouseover(function () {
         success: function (data) {
 
             data.forEach(function (item) {
+                console.log(item)
                 $('.box_list').append(`
                     <div class="top_l clearfix _b_l">
                     </div>
