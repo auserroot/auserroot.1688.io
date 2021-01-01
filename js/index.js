@@ -117,7 +117,7 @@ $('.box_list').mouseover(function () {
                     </div>
                 `);
                 for (var i = 0; i < 5; i++) {
-                    $('._b_l').append(`
+                    $('._b_l').warp(`
                     <div class="b_l_things">
                         <a href="#">
                             <img src="${item.pic}" alt="">
