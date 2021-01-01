@@ -112,12 +112,13 @@ $('.box_list').mouseover(function () {
 
             data.forEach(function (item) {
                 console.log(item)
-                $('.box_list').append(`
-                    <div class="top_l clearfix _b_l">
-                    </div>
-                `);
+                // $('.box_list').append(`
+                //     <div class="top_l clearfix _b_l">
+                //     </div>
+                // `);
+                var str ="<div class='top_l clearfix _b_l'>"
                 for (var i = 0; i < 5; i++) {
-                var str = `
+                    str += `
                     <div class="b_l_things">
                         <a href="#">
                             <img src="${item.pic}" alt="">
@@ -126,46 +127,11 @@ $('.box_list').mouseover(function () {
                         <a href="#" class="b_l_t_a">${item.title}</a>
                     </div>`
                 }
-                 $('._b_l').warp(str)
+                str +='</div>'
+                $('.box_list').append(str);
+                //  $('._b_l').warp(str)
             });
         }
     });
 });
 
-
-
-// //3 页面滚动到距离底部300px的时候再加载(10个)商品
-// window.onscroll = function(){
-// 	var height = getScroll();
-// 	// console.log(document.body.offsetHeight-window.innerHeight-height)
-
-// 	if(document.body.offsetHeight-windowHeight()-height<=300){
-// 		//如果还有商品,则显示
-// 		var next = current + 10>=json.length?json.length:current + 10;
-// 		for(var i=current;i<next;i++){
-// 			itemArr[i].className = "item";//显示
-// 			var img = itemArr[i].getElementsByTagName('img')[0];
-// 			img.src = img.getAttribute('data-src');
-
-// 			// h5自定义属性写法
-// 			// img.src = img.dataset.src;
-// 		}
-// 		current = next;
-// 		if(current>=json.length){
-// 			window.onscroll = null;
-// 		}
-// 	}
-// }
-
-
-// function getScroll(){
-// 	return document.body.scrollTop+document.documentElement.scrollTop;
-// }
-
-// function windowHeight(){
-// 	if (document.compatMode=="CSS1Compat") {
-// 		return document.documentElement.clientHeight;
-// 	}else{
-// 		return document.body.clientHeight;
-// 	}
-// }
