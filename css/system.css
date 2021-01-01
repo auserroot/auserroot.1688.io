@@ -2,9 +2,11 @@ body,html{
     width: 100%;
     height: 100%;
 }
+#warp{
+    height: 100%;
+}
 .warp{
     width: 100%;
-    height: 100%;
 }
 .container{
     width: 1190px;
@@ -90,9 +92,6 @@ body,html{
     cursor: pointer;
     background: url(https://img.alicdn.com/tfs/TB1WJ8lrhTpK1RjSZFKXXa2wXXa-12-10.png) no-repeat;
 }
-/* .redbg a:hover .list1{
-    display: block;
-} */
 .sign{
     margin-left: 6px;
 }
