@@ -92,11 +92,6 @@ $('.banner').mouseout(function(){
     $('.b_next').css('right','-100px');
     $('.b_prev').css('left','-100px');
 });
-//main_banner background 事件
-// $('.swiper-slide').change(function () { 
-//     $('.main_banner').addClass('c2');    
-// });
-
 // 二级菜单
 $('.menu_list').children().mouseover(function(){
     $(this).children('.menu_list_two').css('display', 'block');
@@ -106,4 +101,26 @@ $('.menu_list').children().mouseout(function(){
     $(this).children('.menu_list_two').css('display', 'none');
 })
 
-
+$('.box_list').mouseover(function(){
+    $.ajax({
+        type: "get",
+        url: "../json/1688.json",
+        dataType: "json",
+        success: function (data) {
+            data.forEach(function (item) {
+                $('.box_list').append(`
+                    <div class="top_l clearfix">
+                    </div>
+                `).append(`
+                <div class="b_l_things">
+                <a href="#">
+                    <img src="${item.pic}" alt="">
+                </a>
+                <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
+                <a href="#" class="b_l_t_a">${item.title}</a>
+            </div>
+            `)
+            });
+        }
+    });
+});
