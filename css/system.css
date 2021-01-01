@@ -990,7 +990,7 @@ body,html{
     margin-bottom: 20px;
     margin: 0 6px;
     width: 224px;
-    height: 313px;
+    min-height: 313px;
     border: 1px solid rgba(0, 0, 0, .1);
 }
 .b_l_things:hover{
