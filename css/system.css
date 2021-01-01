@@ -5,7 +5,7 @@ body,html{
 .warp{
     width: 100%;
 }
-.w_height{
+.w_h{
     height: 100%;
 }
 .container{
@@ -13,14 +13,14 @@ body,html{
     height: 100%;
     margin: 0 auto;
 }
+.header_h{
+    height: 25px;
+}
 .header{
     height: 24px;
     color: #555;
     padding: 4px 0;
     border-bottom: 1px solid #eee;
-}
-.hander_h{
-    height: 25px;
 }
 .header a{
     color: #555;
