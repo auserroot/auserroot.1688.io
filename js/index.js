@@ -108,7 +108,6 @@ $('.box_list').mouseover(function(){
         dataType: "json",
         success: function (data) {
             data.forEach(function (item) {
-                if(item<5){
                 $('.box_list').append(`
                 <div class="b_l_things">
                 <a href="#">
@@ -118,7 +117,6 @@ $('.box_list').mouseover(function(){
                 <a href="#" class="b_l_t_a">${item.title}</a>
             </div>
             `)
-        }
             });
         }
     });
