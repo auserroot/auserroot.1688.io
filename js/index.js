@@ -120,6 +120,7 @@ $('.box_list').mouseover(function () {
                                 </div>`;
                      };
                     str += '</div>' ;
+                    $('.box_list').append(str);
             //         $('.box_list').append(`
             //         <div class="top_l clearfix">
             //         </div>
