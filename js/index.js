@@ -111,10 +111,11 @@ $('.box_list').mouseover(function(){
         dataType: "json",
         success: function (data) {
             var str = '';
-            data.forEach(function (i,item) {
+            data.forEach(function () {
                 str += ' <div class="top_l clearfix"> ';
-                    for(;i<5;i++){
-                    str +=`
+
+                $.each(data,function (i,item) {
+                    str += `
                         <div class="b_l_things">
                             <a href="#">
                                 <img src="${item.pic}" alt="">
@@ -123,7 +124,11 @@ $('.box_list').mouseover(function(){
                             <a href="#" class="b_l_t_a">${item.title}</a>
                         </div>
                     `
-                }
+                    if(i%5==0){
+                        return true;
+                    }
+                })
+                    
                 str +='</div>';
                 $('.box_list').append(str);
             });
