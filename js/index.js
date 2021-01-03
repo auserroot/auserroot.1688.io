@@ -114,9 +114,8 @@ $('.box_list').mouseover(function(){
             data.forEach(function (item) {
                 str += ' <div class="top_l clearfix"> ';
 
-                for (var i = 0; i < data.length; i++) {
-                    for (var j = 0; j < 5; j++) {
-                        str += `
+                for (var j = 0; j < 5; j++) {
+                    str += `
                         <div class="b_l_things">
                             <a href="#">
                                 <img src="${item.pic}" alt="">
@@ -124,7 +123,7 @@ $('.box_list').mouseover(function(){
                             <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
                             <a href="#" class="b_l_t_a">${item.title}</a>
                         </div>
-                    `}
+                    `
                 }
                     
                 str +='</div>';
