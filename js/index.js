@@ -113,7 +113,7 @@ $('.box_list').mouseover(function(){
             var str = '';
             data.forEach(function (i,item) {
                 str += ' <div class="top_l clearfix"> ';
-                    for(i=0;i<5;i++){
+                    for(i<5;i++){
                     str +=`
                         <div class="b_l_things">
                             <a href="#">
