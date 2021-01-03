@@ -1056,12 +1056,14 @@ body,html{
     float: left;
     width: 218px;
     padding-top: 148px;
+    background-color:#282828 ;
 }
 .f_right{
     float: right;
     padding-top: 24px;
     line-height: 128px;
     width: 840px;
+    background-color:#282828 ;
 }
 .line{
     width: 840px;
