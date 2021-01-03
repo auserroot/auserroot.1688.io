@@ -110,16 +110,24 @@ $('.box_list').mouseover(function(){
         url: "../json/1688.json",
         dataType: "json",
         success: function (data) {
-            data.forEach(function (item) {
-                $(`
-                <div class="b_l_things">
-                <a href="#">
-                    <img src="${item.pic}" alt="">
-                </a>
-                <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
-                <a href="#" class="b_l_t_a">${item.title}</a>
-            </div>`).appendTo($('.box_list'));
+            var str = '';
+            data.forEach(function (i,item) {
+                str += ' <div class="top_l clearfix"> ';
+                    for(i=0;i%5!=0;i++){
+                    str +=`
+                        <div class="b_l_things">
+                            <a href="#">
+                                <img src="${item.pic}" alt="">
+                            </a>
+                            <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
+                            <a href="#" class="b_l_t_a">${item.title}</a>
+                        </div>
+                    `
+                }
+                str +='</div>';
+                $('.box_list').append(str);
             });
         }
+        
     });
 });
