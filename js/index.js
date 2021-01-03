@@ -125,7 +125,7 @@ $('.box_list').mouseover(function(){
                         </div>
                     `
                     if(i%5==0){
-                        return true;
+                        return false;
                     }
                 })
                     
