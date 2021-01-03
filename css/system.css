@@ -4,6 +4,7 @@ body,html{
 }
 .warp{
     width: 100%;
+    position: relative;
 }
 ._h_{
     height: 100%;
@@ -1051,6 +1052,9 @@ body,html{
     height: 400px;
     width: 100%;
     background-color:#282828 ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 .f_left{
     float: left;
