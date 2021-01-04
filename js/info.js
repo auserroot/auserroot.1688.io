@@ -111,3 +111,12 @@ $('._form input').mouseover(function () {
     $(this).focus();
     $(this).css({ 'border': '2px solid #fe7400' });
 });
+
+
+// <!-- nav -->
+$('.l_s').mouseover(function(){
+    $('.selact').css({'display':'block'});
+});
+$('.l_s').mouseout(function(){
+    $('.selact').css({'display':'none'});
+});
