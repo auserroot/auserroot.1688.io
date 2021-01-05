@@ -172,7 +172,7 @@ $('#myModal').modal();
 
 
 // 注册
-$('button').click(function(){
+$('#reg_btn').click(function(){
     $.ajax({
         url:"../json/reg.json",
         data:{
