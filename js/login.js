@@ -47,7 +47,7 @@ $('#login').click(function(){
     });
 });
 // form2
-$('#login').click(function(){
+$('#_login').click(function(){
     $.ajax({
         url:"../json/login.json",
         data:{
