@@ -759,7 +759,7 @@ body,html{
     color: #888;
 }
 .center p:nth-child(1) span:nth-child(2){
-    font-size: 18px;
+    font-size: 24px;
     line-height: 40px;
     color: #ff7300;
 }
@@ -812,6 +812,9 @@ body,html{
 .center p:nth-of-type(4) span:nth-of-type(2) b{
     line-height: 18px;
 }
+.center p:nth-of-type(4) span:nth-of-type(2){
+    position: relative;
+}
 .center p:nth-of-type(4) span:nth-of-type(2) b:nth-of-type(2){
     margin-left: 30px;
     display: inline-block;
@@ -847,14 +850,50 @@ body,html{
     top: 0;
     right: 0;
 }
-.center p:nth-of-type(4) span:nth-of-type(2) i{
-    
+.icon-arrow {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    transform-origin: 50% 40%;
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+.tttr{
+    top: 1px;
+    right: -13px;
+}
+.icon-arrow-down {
+    width: 10px;
+    height: 5px;
+}
+.fd-hid{
+    overflow: hidden;
 }
 
-
-
-
-
+.icon-arrow em, .icon-arrow span{
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+}
+.icon-arrow-down em {
+    top: 0;
+    left: 0;
+    border-width: 5px 5px 0;
+    border-style: solid dashed dashed;
+    border-color: #888 transparent transparent;
+    border-radius: 2px;
+}
+.icon-arrow-down span {
+    top: -2px;
+    left: 0;
+    border-width: 5px 5px 0;
+    border-style: solid dashed dashed;
+    border-color: #fff transparent transparent;
+    border-radius: 2px;
+}
 
 .right{
     width: 130px;
