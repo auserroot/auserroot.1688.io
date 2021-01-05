@@ -128,6 +128,8 @@ $('.box_list').mouseover(function(){
                     
                 str +='</div>';
                 $('.box_list').append(str);
+
+                return false;
             });
         }
         
