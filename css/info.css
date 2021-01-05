@@ -932,6 +932,58 @@ body,html{
     margin: 0 6px;
     color: #f27800;
 }
+.center div{
+    width: 480px;
+    height: 156px;
+}
+.center div span{
+    float: left;
+}
+.center div div.warp_box{
+    float: left;
+    height: 154px;
+    width: 400px;
+}
+.warp_box {
+    overflow: hidden;
+}
+.warp_box table tr{
+    height: 50px;
+}
+.warp_box table td{
+    width: 100px;
+    height: 30px;
+    border-bottom:1px solid #999;
+    border-bottom-style: dashed;
+}
+.warp_box table td img{
+    width: 30px;
+    height: 30px;
+}
+.warp_box table tr td span{
+    display: inline-block;
+    width: auto;
+}
+.warp_box table tr td:last-child i{
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #999;
+    font-size: 12px;
+    color: #555;
+    cursor: pointer;
+}
+.warp_box table tr td:last-child input{
+    float: left;
+    padding-left:6px ;
+    width: 50px;
+    height: 24px;
+    border: 1px solid #999;
+}
+
 .center p:nth-of-type(8) span:nth-of-type(2) i{
     display: inline-block;
     height: 24px;
@@ -963,14 +1015,19 @@ body,html{
 .center p:last-child span:nth-of-type(2):hover ._last{
     display: block;
 }
-.center p:last-child span:last-of-type(2):hover i._ma_{
+.center p:last-child span:nth-of-type(2):hover i._ma_{
     transform:rotate(180deg);
+}
+.center p:last-child span:nth-of-type(3){
+    color: #888;
+}
+.center p:last-child span:nth-of-type(3) a{
+    color: #666;
 }
 
 
-
-
 .right{
+    display: none;
     width: 130px;
     float: left;
 }
