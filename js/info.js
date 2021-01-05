@@ -159,3 +159,14 @@ $(function() {
         }
     });
 });
+
+
+// 支付方式
+// $('.l_p_li').mouseover(function(){
+//     $('.stop').css({'transform':'rotate(180deg)'});
+//     $('._last').css({'display':'block'});
+// });
+// $('.l_p_li').mouseout(function(){
+//     $('.stop').css({'transform':'rotate(0)'});
+//     $('._last').css({'display':'none'});
+// });
