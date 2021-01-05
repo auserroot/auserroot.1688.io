@@ -901,6 +901,7 @@ body,html{
 }
 .s_l_g_top{
     margin-top: 10px;
+    overflow: hidden;
 }
 ._bto{
     min-height: 472px;
