@@ -27,27 +27,6 @@ $('.msg_login').click(function(){
     $('.bottom2').css('display','none');
 })
 //点击登录跳转页面
-// 注册
-  $('#reg').click(function(){
-    $.ajax({
-        url:"../json/reg.json",
-        data:{
-            un:$('#username').val(),
-            pw:$('#password').val()
-        },
-        dataType:'json',
-        success:function(res){
-            if(res.code==1){
-                // 注册成功，信息添加到本地存储
-                localStorage.setItem('name',$('#username').val());
-                localStorage.setItem('password',$('#password').val());
-                location.href = "../login.html"
-            }
-        }
-    });
-});
-
-// 登录
 $('input[type="button]').click(function(){
     $.ajax({
         url:"../json/login.json",
