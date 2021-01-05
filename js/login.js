@@ -31,15 +31,15 @@ $('#login').click(function(){
     $.ajax({
         url:"../json/login.json",
         data:{
-            username:$('#username').val(),
-            password:$('#password').val()
+            username:$('#username').val()?$('#username').val():$('._username_').val(),
+            password:$('#password').val()?$('#password').val():$('.pwd_').val()
         },
         dataType:"json",
         success:function(res){
             if(res.code==1){
                 // 登录成功，信息添加到本地存储
-                localStorage.setItem('name',$('#uesrname').val());
-                localStorage.setItem('password',$('#password').val());
+                localStorage.setItem('name',$('#username').val()?$('#username').val():$('._username_').val());
+                localStorage.setItem('password',$('#password').val()?$('#password').val():$('._pwd_').val());
                 location.href = "../index.html"
             }
         }

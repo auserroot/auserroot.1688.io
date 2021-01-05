@@ -193,10 +193,11 @@ color: #f27800;
     background: #ccc;
 }
 .username input{
-    width: 222px;
+    width: 180px;
     height: 40px;
     font-size: 14px;
     line-height: 40px;
+    margin-left: 68px;
 }
 .password{
     width:302px;
