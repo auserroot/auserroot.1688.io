@@ -193,11 +193,10 @@ color: #f27800;
     background: #ccc;
 }
 .username input{
-    width: 180px;
+    width: 222px;
     height: 40px;
     font-size: 14px;
     line-height: 40px;
-    margin-left: 68px;
 }
 .password{
     width:302px;
@@ -220,7 +219,6 @@ color: #f27800;
     font-size: 14px;
     line-height: 40px;
 }
-
 .form2 .password{
     width:302px;
     border: 1px solid #F4F2F2;
@@ -271,6 +269,10 @@ color: #f27800;
 }
 .f_phonenum{
     position: relative;
+}
+.f_phonenum ._username_{
+    width: 180px;
+    margin-left: 68px;
 }
 .pho_n{
     position: absolute;
