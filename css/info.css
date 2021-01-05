@@ -27,7 +27,7 @@ body,html{
 }
 .h_rigth span.phone{
     display: inline-block;
-    width: 60px;
+    width: 78px;
     height: 30px;
     padding-left: 14px;
     padding-right: 6px;
@@ -390,7 +390,7 @@ body,html{
 
 /*  1688详情头部 */
 .header_t{
-    height: 50px;
+    height: 70px;
     padding: 14px 0 0 20px;
     background: #F6F6F6;
     border-bottom: 2px solid #FF7300;
@@ -533,10 +533,11 @@ body,html{
 }
 /* 下拉 */
 ._l_bar{
-    width: 410px;
-    height: 186px;
+    width: 444px;
+    height: 218px;
     padding: 20px 0 0 22px;
     border: 1px solid #eaeaea;
+    background: #fff;
     position: absolute;
     top: 48px;
     left: -148px;
@@ -612,7 +613,7 @@ body,html{
     position: absolute;
     top: 48px;
     left: 0;
-    z-index: -1;
+    /* z-index: -1; */
     display: none;
 }
 ._ew_ img{    
@@ -689,6 +690,7 @@ body,html{
     width: 194px;
     height: 342px;
     border: 1px solid #eaeaea;
+    background: #fff;
     position: absolute;
     top: 30px;
     left: -130px;
@@ -703,4 +705,47 @@ body,html{
 .main_nav ul li .selact p a{
     font-size: 12px;
     color: #1E50A2;
+}
+
+/* goods-info */
+.g_top{height: 50px;}
+.g_top h1{
+    float: left;
+    font-size: 18px;
+    line-height: 50px;
+    color: #222;
+    margin:0 20px 0 0;
+    padding: 0;
+    border-bottom: none;
+}
+.g_top p{    
+    float: right;
+    line-height: 50px;
+    color: #aaa;
+    padding-right: 20px;
+}
+.g_top p span{    
+    display: inline-block;
+    margin-left: 20px;
+}
+
+
+/* 放大镜 */
+.g_box{
+    width: 1140px;
+    height: 604px;
+}
+
+.left{
+    width: 380px;
+}
+
+.center{
+    width: 630px;
+    float: left;
+}
+
+.right{
+    width: 130px;
+    float: left;
 }

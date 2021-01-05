@@ -95,13 +95,9 @@ $('.stor_info ul').mouseout(function(){
 
 // ew
 $('.ew').mouseover(function(){
-    $('._ew_').animate({'height':'115px'});
-    $('._ew_ img').animate({'height':'110px'});
     $('._ew_').css({'display':'block'});
 });
 $('.ew').mouseout(function(){
-    $('._ew_ img').css({'height':'0'});
-    $('._ew_').css({'height':'0'});
     $('._ew_').css({'display':'none'});
 });
 
@@ -119,4 +115,47 @@ $('.l_s').mouseover(function(){
 });
 $('.l_s').mouseout(function(){
     $('.selact').css({'display':'none'});
+});
+
+
+
+// 放大镜
+$(function() {
+    var a = $('#demo4carousel').elastislide({
+        start: 1,
+        minItems: 4,
+        onClick: function(c, d, e) {
+            c.siblings().removeClass("active");
+            c.addClass("active");
+            a.setCurrent(d);
+            e.preventDefault();
+            var f = $('#demo4').data('imagezoom');
+            f.changeImage(c.find('img').attr('src'), c.find('img').data('largeimg'))
+        },
+        onReady: function() {
+            $('#demo4').ImageZoom({
+                type: 'standard',
+                zoomSize: [480, 300],
+                bigImageSrc: 'demo_assets/large/2.jpg',
+                offset: [10, -4],
+                zoomViewerClass: 'standardViewer',
+                onShow: function(c) {
+                    c.$viewer.hide().fadeIn(500)
+                },
+                onHide: function(c) {
+                    c.$viewer.show().fadeOut(500)
+                }
+            });
+            $('#demo4carousel li:eq(1)').addClass('active');
+            $(window).resize(function() {
+                var c = $('#demo4').data('imagezoom');
+                winWidth = $(window).width();
+                if (winWidth > 900) {
+                    c.changeZoomSize(480, 300)
+                } else {
+                    c.changeZoomSize(winWidth * 0.4, winWidth * 0.4 * 0.625)
+                }
+            })
+        }
+    });
 });
