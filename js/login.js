@@ -27,7 +27,7 @@ $('.msg_login').click(function(){
     $('.bottom2').css('display','none');
 })
 //点击登录跳转页面
-$('input[type="button]').click(function(){
+$('#login').click(function(){
     $.ajax({
         url:"../json/login.json",
         data:{
