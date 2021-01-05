@@ -739,7 +739,12 @@ body,html{
 .left{
     width: 380px;
 }
-
+._height_{
+    height: 380px;
+}
+._height_ img{
+    height: 100%;
+}
 .center{
     width: 630px;
     float: left;
