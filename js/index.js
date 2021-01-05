@@ -104,18 +104,23 @@ $('.menu_list').children().mouseout(function(){
 
 
 //猜你喜欢 goods——list
-$('.box_list').mouseover(function(){
-    $.ajax({
-        type: "get",
-        url: "../json/1688.json",
-        dataType: "json",
-        success: function (data) {
-            var str = '';
-            data.forEach(function (item) {
-                str += ' <div class="top_l clearfix"> ';
+$(window).scroll(function (e) {//监控滚动事件
+    var Height = document.body.clientHeight || document.documentElement.clientHeight;//获取屏幕可视区域高度
+    var scrollHeight = $(document).scrollTop() + Height;//计算触发ajax事件的页面滚动距离
+    var ajaxHeight = $('.box_list').offset().top;//到达这个高度的时候ajax开始
+    if (ajaxHeight < 2000) {
+        if (scrollHeight >= ajaxHeight + 300) {
+            $.ajax({
+                type: "get",
+                url: "../json/1688.json",
+                dataType: "json",
+                success: function (data) {
+                    var str = '';
+                    data.forEach(function (item) {
+                        str += ' <div class="top_l clearfix"> ';
 
-                for (var j = 0; j < 5; j++) {
-                    str += `
+                        for (var j = 0; j < 5; j++) {
+                            str += `
                         <div class="b_l_things">
                             <a href="#">
                                 <img src="${item.pic}" alt="">
@@ -124,14 +129,14 @@ $('.box_list').mouseover(function(){
                             <a href="#" class="b_l_t_a">${item.title}</a>
                         </div>
                     `
-                }
-                    
-                str +='</div>';
-                $('.box_list').append(str);
+                        }
 
-                return false;
+                        str += '</div>';
+                        $('.box_list').append(str);
+                    });
+                }
+
             });
         }
-        
-    });
+    }
 });
