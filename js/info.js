@@ -161,6 +161,29 @@ $(function() {
 });
 
 
+
+// center 数据添加
+$('tr').on('click','.del',function(){
+    if($(this).siblings('.c_txt').val()>0){
+        var num = parseInt($(this).siblings('.c_txt').val());
+        num-=1;
+        return  $(this).siblings('.c_txt').val(num);
+    }else{
+        $(this).siblings('.c_txt').val(0);
+    }
+});
+$('.add').click(function(){
+    if($(this).siblings('.c_txt').val()>=0){
+        var num = parseInt($(this).siblings('.c_txt').val());;
+        num+=1;
+        return  $(this).siblings('.c_txt').val(num);
+    }else{
+        $(this).siblings('.c_txt').val(0);
+    }
+});
+
+
+
 // 支付方式
 // $('.l_p_li').mouseover(function(){
 //     $('.stop').css({'transform':'rotate(180deg)'});
