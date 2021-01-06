@@ -108,7 +108,7 @@ $(window).scroll(function (e) {//监控滚动事件
     var Height = document.body.clientHeight || document.documentElement.clientHeight;//获取屏幕可视区域高度
     var scrollHeight = $(document).scrollTop() + Height;//计算触发ajax事件的页面滚动距离
     var ajaxHeight = $('.box_list').offset().top;//到达这个高度的时候ajax开始
-    if (ajaxHeight < 2000) {
+    if (ajaxHeight < 1000) {
         if (scrollHeight >= ajaxHeight + 300) {
             $.ajax({
                 type: "get",
@@ -122,11 +122,11 @@ $(window).scroll(function (e) {//监控滚动事件
                         for (var j = 0; j < 5; j++) {
                             str += `
                         <div class="b_l_things">
-                            <a href="#">
+                            <a href="../info.html">
                                 <img src="${item.pic}" alt="">
                             </a>
                             <p><span>￥ ${item.pric}</span><span>${item.offerdeal}</span></p>
-                            <a href="#" class="b_l_t_a">${item.title}</a>
+                            <a href="../info.html" class="b_l_t_a">${item.title}</a>
                         </div>
                     `
                         }

@@ -193,8 +193,14 @@ $('.add').click(function(){
 });
 
 //删
+function removeCart(){
+
+    localStorage.removeItem('cart');
+}
+
 $('._icon_r_b2').click(function(){
     if($(this).parent().prev().children().children('input[type="checkbox"]').is(':checked')) {
         $(this).parent().parent().children($('.goos_m_c')).children().remove();
+        removeCart();
     }
 });

@@ -403,7 +403,7 @@ body,html{
 
 /* main */
 .main{
-    height: 790px;
+    min-height: 790px;
 }
 /* 头部 */
 .header_m{
@@ -529,9 +529,9 @@ body,html{
 
 
 
-#list_1{
+/* #list_1{
     display: none;
-}
+} */
 /* #list_2{
     display: none;
 } */
