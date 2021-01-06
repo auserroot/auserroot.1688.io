@@ -5,6 +5,7 @@ body,html{
 }
 .warp{
     width: 100%;
+    position: relative;
 }
 ._h_{
     height: 100%;
@@ -399,7 +400,7 @@ body,html{
 
 /* main */
 .main{
-    min-height: 19150px;
+    min-height: 19440px;
 }
 /*  1688详情头部 */
 .header_t{
@@ -1330,3 +1331,62 @@ body,html{
     color: #96969696;
     line-height: 30px;
  }
+
+
+ /* 侧边组件  */
+.left_bar{
+    cursor: pointer;
+    height: 146px;
+    width: 28px;
+    position: fixed;
+    top: 294px;
+    left: 0;
+    background: #A5A5A5;
+}
+._bg_{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 3px 0 0 4px;
+    background: transparent url(https://img.alicdn.com/tfs/TB1CfFSwaQoBKNjSZJnXXaw9VXa-924-457.png) no-repeat scroll -820px -268px;
+}
+.left_bar p.p_txt{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 12px 0 0 6px;
+}
+
+
+ .right_bar{
+     width: 36px;
+     height: 100%;
+     text-align: center;
+     background: #EDEDED;
+     position: fixed;
+     top: 0;
+     right: 0;
+ }
+ .right_bar ul{
+     height: 402px;
+     margin: 296px 0;
+ }
+ .right_bar ul li{
+    text-align: center;
+    height: 68px;
+}
+.right_bar ul li a p{
+    color: #FF7300;
+    display: none;
+}
+
+.gotop{
+    position: fixed;
+    bottom: 80px;
+    right: 0;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    cursor: pointer;
+}

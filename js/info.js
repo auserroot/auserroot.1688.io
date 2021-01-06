@@ -187,3 +187,20 @@ $(window).ready(function () {
         }
     });
 });
+
+// 侧边组件
+// 左边
+// 右边
+$('.icon').mouseover(function(){
+    $(this).children('a').children('img').css({'background':'#ff7300'});
+    $(this).children('a').children('p').css({'display':'block','color':'#ff73000'});
+});
+$('.icon').mouseout(function(){
+    $(this).children('a').children('img').css({'background':'none'});
+    $(this).children('a').children('p').css({'display':'none'});
+});
+
+
+$('.gotop').click(function(){
+    $('html,body').animate({scrollTop:0},500);
+});
