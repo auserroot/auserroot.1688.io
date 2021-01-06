@@ -91,3 +91,46 @@ $('.h_bot').children().click(function(){
         $(this).siblings().css({'color': '#000','border-bottom':'1px solid #eee'})
     }
 });
+
+//加入进货单
+function getCart(){
+    var list = localStorage.getItem('cart')||"[]"; //字符串
+    return JSON.parse(list);
+}
+function setCart(arr){
+
+    localStorage.setItem('cart',JSON.stringify(arr))
+}
+// 1 购物车页面一打开就要展示该用户的购物车商品列表
+// showList()
+// function showList(){
+//     var productList = getCart();
+//     if(productList.length<1){
+//         $('#list_2').hide();
+//         $('#list_1').show();
+//         return;
+//     }
+//     $('.goods_list').empty();
+//     $('#list_2').show();
+//     $('#list_1').hide();
+//     $.each(productList,function(index,product){
+//         console.log(product)
+//         $('tbody').append(`<tr>
+//         <td>${product.product_id}</td>
+//         <td>${product.product_name}</td>
+//         <td>
+//             <img src="${product.product_img}" alt="">
+//         </td>
+//         <td>${product.product_price}</td>
+//         <td>
+//             <span class="add">+</span>
+//             <span>${product.product_num}</span>
+//             <span class="cut">-</span>
+//         </td>
+//         <td>
+//             <button class="del">删除</button>
+//         </td>
+//     </tr>`)
+    
+//     })
+// }

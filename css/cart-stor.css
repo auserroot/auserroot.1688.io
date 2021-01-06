@@ -524,11 +524,38 @@ body,html{
     min-height: 360px;
     background: #fff;
 }
-
-#list_2{
+#list_1{
     display: none;
 }
-
+/* #list_2{
+    display: none;
+} */
+.goods_list{
+    min-height: 178px;
+}
+.g_box{
+    width: 1190px;
+    height: 178px;
+}
+.g_b_top{
+    height: 48px;
+}
+._top_l{
+    float: left;
+}
+._top_r{
+    float: left;
+}
+._icon{
+    display: inline-block;
+    background: url(//cbu01.alicdn.com/cms/upload/2015/512/252/2252215_1955610150.png) no-repeat 0 -39px;
+    margin-left: 4px;
+    width: 15px;
+    height: 18px;
+    line-height: 16px;
+    vertical-align: middle;
+    padding: 0;
+}
 
 /* 猜你喜欢 */
 .mod-recommend {

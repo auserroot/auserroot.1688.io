@@ -183,6 +183,40 @@ $('.add').click(function(){
 });
 
 
+// 加入进货单
+function getCart(){
+    var list = localStorage.getItem('cart')||"[]"; //字符串
+    return JSON.parse(list);
+}
+function setCart(arr){
+
+    localStorage.setItem('cart',JSON.stringify(arr))
+}
+
+// 点击加入进货单
+$('.add').click(function(){
+    var newProduct = {
+        product_id:$(this).data('id'),
+        product_name:$(this).data('name'),
+        product_img:$(this).data('img'),
+        product_price:$(this).data('price'),
+        product_num:$(this).data('num')
+    };
+    
+    // 先获取原来的商品列表数组
+    var productList = getCart();
+    // 把新商品添加进去
+    productList.push(newProduct);//如果有同id商品，不能直接push，要把num增加
+    // 存回本地存储
+    setCart(productList);
+});
+
+//点击进入进货单
+$('.add_tocart').click(function(){
+    location.href='../cart-stor.html';
+})
+
+
 
 // 支付方式
 // $('.l_p_li').mouseover(function(){
