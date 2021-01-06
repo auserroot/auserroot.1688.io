@@ -196,11 +196,11 @@ function setCart(arr){
 // 点击加入进货单
 $('.add').click(function(){
     var newProduct = {
-        product_id:$(this).data('id'),
-        product_name:$(this).data('name'),
-        product_img:$(this).data('img'),
-        product_price:$(this).data('price'),
-        product_num:$(this).data('num')
+        id:$(this).data('id'),
+        name:$(this).data('name'),
+        img:$(this).data('img'),
+        price:$(this).data('price'),
+        num:$(this).data('num')
     };
     
     // 先获取原来的商品列表数组

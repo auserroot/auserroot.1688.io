@@ -92,6 +92,9 @@ $('.h_bot').children().click(function(){
     }
 });
 
+
+
+
 //加入进货单
 function getCart(){
     var list = localStorage.getItem('cart')||"[]"; //字符串
@@ -102,35 +105,94 @@ function setCart(arr){
     localStorage.setItem('cart',JSON.stringify(arr))
 }
 // 1 购物车页面一打开就要展示该用户的购物车商品列表
-// showList()
-// function showList(){
-//     var productList = getCart();
-//     if(productList.length<1){
-//         $('#list_2').hide();
-//         $('#list_1').show();
-//         return;
-//     }
-//     $('.goods_list').empty();
-//     $('#list_2').show();
-//     $('#list_1').hide();
-//     $.each(productList,function(index,product){
-//         console.log(product)
-//         $('tbody').append(`<tr>
-//         <td>${product.product_id}</td>
-//         <td>${product.product_name}</td>
-//         <td>
-//             <img src="${product.product_img}" alt="">
-//         </td>
-//         <td>${product.product_price}</td>
-//         <td>
-//             <span class="add">+</span>
-//             <span>${product.product_num}</span>
-//             <span class="cut">-</span>
-//         </td>
-//         <td>
-//             <button class="del">删除</button>
-//         </td>
-//     </tr>`)
+showList()
+function showList(){
+    var productList = getCart();
+    if(productList.length<1){
+        $('#list_2').hide();
+        $('#list_1').show();
+        return;
+    }
+    $('.goos_m_c').children().empty();
+    $('#list_2').show();
+    $('#list_1').hide();
+    $.each(productList,function(index,product){
+        console.log(product)
+        $('.goos_m_c').children().append(`
+        <input type="checkbox">
+        <img src="${product.img}" alt="">
+        <p class="g_p">${product.name}<i class="_icon_main"><img src="https://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_mix.gif" alt=""></i><i><img src="https://cbu01.alicdn.com/cms/upload/2015/111/115/2511111_1964054271.png" alt=""></i></p>
+
+        <table class="goods_info">
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox">
+                        <span>${product.id}</span>
+                    </td>
+                    <td class="clearfix">
+                        <i class="del">-</i>
+                        <input type="text" placeholder="0" value="${product.num}" class="c_txt">
+                        <i class="add">+</i>
+                    </td>
+                    <td>
+                        <span>${product.price}</span>
+                    </td>
+                    <td>
+                        <span>--</span>
+                    </td>
+                    <td>
+                        <span>${parseInt(product.price)*parseInt(product.num) }</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        `)
     
-//     })
-// }
+    })
+}
+
+
+
+//save & delete 
+$('._icon_r_b1').mouseover(function(){
+    $(this).css({'background-positionY':'-75px'});
+});
+$('._icon_r_b2').mouseover(function(){
+    $(this).css({'background-positionY':'-26px'});
+});
+$('._icon_r_b1').mouseout(function(){
+    $(this).css({'background-positionY':'-50px'});
+});
+$('._icon_r_b2').mouseout(function(){
+    $(this).css({'background-positionY':'0px'});
+});
+
+
+//减
+$('tr').on('click','.del',function(){
+    if($(this).siblings('.c_txt').val()>0){
+        var num = parseInt($(this).siblings('.c_txt').val());
+        num-=1;
+        $(this).parent().parent().children('td:last').children('span').html($(this).parent().next().children('span').html()/num);
+        return  $(this).siblings('.c_txt').val(num);
+    }else{
+        $(this).siblings('.c_txt').val(0);
+    }
+});
+// 加
+$('.add').click(function(){
+    if($(this).siblings('.c_txt').val()>=0){
+        var num = parseInt($(this).siblings('.c_txt').val());;
+        num+=1;
+        $(this).parent().parent().children('td:last').children('span').html($(this).parent().next().children('span').html()*num);
+        return  $(this).siblings('.c_txt').val(num);
+    }else{
+        $(this).siblings('.c_txt').val(0);
+    }
+});
+
+//删
+$('._icon_r_b2').click(function(){
+
+});
