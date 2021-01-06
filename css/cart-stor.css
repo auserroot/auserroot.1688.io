@@ -498,6 +498,7 @@ body,html{
 .m_list ul{
     height: 40px;
     line-height: 40px;
+    background-color: #F7F7F7;
 }
 .m_list ul li{
     float: left;
@@ -524,6 +525,10 @@ body,html{
     min-height: 360px;
     background: #fff;
 }
+
+
+
+
 #list_1{
     display: none;
 }
@@ -536,19 +541,41 @@ body,html{
 .g_box{
     width: 1190px;
     height: 178px;
+    margin: 0 auto;
 }
 .g_b_top{
     height: 48px;
+    line-height: 48px;
+    padding:0 38px;
+    border-bottom: 1px solid #ccc;
 }
 ._top_l{
     float: left;
+    color: #555;
 }
 ._top_r{
-    float: left;
+    float: right;
+    color: #555;
 }
+._top_r i{
+    font-size: 10px;
+    color: #ccc;
+}
+._icon_main{
+    width: 35px;
+    background-image: url(https://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_mix.gif);
+    background-position: 0 1px;
+}
+
+
+
+
+
+
+
 ._icon{
     display: inline-block;
-    background: url(//cbu01.alicdn.com/cms/upload/2015/512/252/2252215_1955610150.png) no-repeat 0 -39px;
+    background: url(https://cbu01.alicdn.com/cms/upload/2015/512/252/2252215_1955610150.png) no-repeat 0 -39px;
     margin-left: 4px;
     width: 15px;
     height: 18px;
@@ -556,6 +583,17 @@ body,html{
     vertical-align: middle;
     padding: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* 猜你喜欢 */
 .mod-recommend {
