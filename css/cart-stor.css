@@ -540,7 +540,6 @@ body,html{
 }
 .g_box{
     width: 1190px;
-    height: 178px;
     margin: 0 auto;
 }
 .g_b_top{
@@ -673,7 +672,7 @@ body,html{
 /* 猜你喜欢 */
 .mod-recommend {
     height: 295px;
-    margin: 20px 0;
+    margin: 200px 0 0;
     width: 100%;
 }
 .mod-recommend header{
