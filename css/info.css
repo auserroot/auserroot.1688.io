@@ -1,6 +1,7 @@
 body,html{
     width: 100%;
     height: 100%;
+    background: #fff;
 }
 .warp{
     width: 100%;
@@ -1250,6 +1251,9 @@ body,html{
     font-size: 12px;
     line-height: 14px;
 }
+._cst_top ul li p:nth-of-type(1) a:hover{
+    color:#f27800;
+}
 ._cst_top ul li p:nth-of-type(2){
     font-size: 18px;
     color:#f27800;
@@ -1290,7 +1294,9 @@ body,html{
  /* footer */
  .goods_footer{
      width: 100%;
-     height: 228px;
+     height: 270px;
+     background:#F2F2F2 ;
+     padding: 60px 60px 0;
  }
  ._f_left{
      float: left;
@@ -1301,10 +1307,26 @@ body,html{
      text-align: center;
      border-right: 1px solid #ccc;
  }
- ._f_right{
-    float: left;
- }
+
  .ttr_f{
      width: 990px;
-     height: 225px;
+ }
+  ._f_right{
+    float: left;
+    padding: 0 30px;
+ }
+ ._f_right ul li{
+     float: left;
+     width: 138px;
+     height: 145px;
+     margin-left: 40px;
+ }
+ ._f_right ul li dl dt{
+     font-size: 14px;
+    color: #444;
+    line-height: 20px;
+ }
+ ._f_right ul li dl dd a{
+    color: #96969696;
+    line-height: 30px;
  }
