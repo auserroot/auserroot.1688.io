@@ -450,7 +450,7 @@ body,html{
 .m_list{
     min-height: 360px;
     background: #fff;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 .center{
     background:transparent url(https://cbu01.alicdn.com/cms/upload/2015/932/352/2253239_1148900260.png) no-repeat scroll 0 0;
@@ -566,6 +566,8 @@ body,html{
     width: 35px;
 }
 .g_main{
+    min-height: 224px;
+    background: #fff;
     padding: 0 38px 32px;
     position: relative;
     border-bottom: 1px solid #ccc;
@@ -578,8 +580,6 @@ body,html{
 .g_p{
     display: inline-block;
 }
-
-
 .goods_info{
     width: 1108px;
     height: 48px;
@@ -675,9 +675,6 @@ body,html{
     height: 295px;
     margin: 20px 0;
     width: 100%;
-}
-._h_top{
-    margin-top: 400px;
 }
 .mod-recommend header{
     width: 100%;

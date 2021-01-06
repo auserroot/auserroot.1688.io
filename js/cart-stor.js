@@ -194,5 +194,7 @@ $('.add').click(function(){
 
 //删
 $('._icon_r_b2').click(function(){
-
+    if($(this).parent().prev().children().children('input[type="checkbox"]').is(':checked')) {
+        $(this).parent().parent().children($('.goos_m_c')).children().remove();
+    }
 });
