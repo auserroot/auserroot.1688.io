@@ -172,18 +172,18 @@ $(function() {
 // });
 
 // 详情图
-$(window).ready(function(){
+$(window).ready(function () {
     $.ajax({
         type: "get",
         url: "../json/pic.json",
         dataType: "json",
-        success: function(data) {
-            $.each(data, function (item) {
+        success: function (data) {
+            $.each(data, function (i, item) {
                 $('._i_r_bot').append(`
-                <img src="${item.url}" atl="${item.tit}">
+                <img src="${item.url}" alt="${item.tit}">
                 <br>
             `);
             });
         }
     });
-})
+});
