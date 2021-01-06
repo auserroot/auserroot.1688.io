@@ -170,3 +170,20 @@ $(function() {
 //     $('.stop').css({'transform':'rotate(0)'});
 //     $('._last').css({'display':'none'});
 // });
+
+// 详情图
+$(window).ready(function(){
+    $.ajax({
+        type: "get",
+        url: "../json/pic.json",
+        dataType: "json",
+        success: function(data) {
+            $.each(data, function (item) {
+                $('._i_r_bot').append(`
+                <img src="${item.url}" atl="${item.tit}">
+                <br>
+            `);
+            });
+        }
+    });
+})
