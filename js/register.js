@@ -194,7 +194,7 @@ $('#reg_btn').click(function(){
                             location.href = "../login.html"
                         }else{
                             $('#pwd').next().html('两次密码不一致');
-                            $('#pwd').next().html('与上面密码不一致');
+                            $('#pwsd').next().html('与上面密码不一致');
                         }
                     }
                 } else {
