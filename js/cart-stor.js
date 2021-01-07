@@ -155,6 +155,12 @@ function showList(){
 }
 
 
+//全选
+$('#select-all,.select-all').click(function(){
+    $("input[type='checkbox']").prop("checked", function( i, val ) {
+        return !val;
+      });
+});
 
 //save & delete 
 $('._icon_r_b1').mouseover(function(){
@@ -177,7 +183,7 @@ $('tr').on('click','.del',function(){
         var num = parseInt($(this).siblings('.c_txt').val());
         num-=1;
         $(this).parent().parent().children('td:last').children('span').html($(this).parent().next().children('span').html()*num);
-        $('.howmuch').children('span').html($(this).parent().next().children('span').html()*num);
+        $(this).parent().parent().parent().parent().parent().parent().parent().next('.pay_box').children('.howmuch').children('span').html($(this).parent().next().children('span').html()*num);
         return  $(this).siblings('.c_txt').val(num);
     }else{
         $(this).siblings('.c_txt').val(0);
@@ -201,16 +207,17 @@ function removeCart(){
 
     localStorage.removeItem('cart');
 }
-$('#check').click(function(){
+$('input[type="checkbox"]#check').click(function(){
     // console.log(1)
-    $(this).prop("checked");
+    $(this).prop("checked",true);
 });
 $('._icon_r_b2').click(function(){
-    if($('#check').is(':checked')) {
-        $('#check').parent().remove();
+    if($('input[type="checkbox"]#check').is(':checked')) {
+       
+       $(this).parent().siblings('.goos_m_c').children().remove();
         removeCart();
         location.href='../cart-stor.html';
-    }
+     }
 });
 
 
@@ -219,11 +226,4 @@ $('html,body').ready(function(){
     if(localStorage.getItem("name")){
         $('#login').html(localStorage.getItem("name"));
     }
-});
-
-//全选
-$('#select-all,.select-all').click(function(){
-    $("input[type='checkbox']").prop("checked", function( i, val ) {
-        return !val;
-      });
 });
