@@ -201,13 +201,13 @@ function removeCart(){
 
     localStorage.removeItem('cart');
 }
-$('.goos_m_c').children().children('#check').click(function(){
-    console.log(1)
-    $(this).prop("checked",true);
+$('#check').click(function(){
+    // console.log(1)
+    $(this).prop("checked");
 });
 $('._icon_r_b2').click(function(){
-    if($(this).parent().prev().children().children('#check').is(':checked')) {
-        $(this).parent().parent().children($('.goos_m_c')).children().remove();
+    if($('#check').is(':checked')) {
+        $('#check').parent().remove();
         removeCart();
         location.href='../cart-stor.html';
     }
@@ -221,3 +221,9 @@ $('html,body').ready(function(){
     }
 });
 
+//全选
+$('#select-all,.select-all').click(function(){
+    $("input[type='checkbox']").prop("checked", function( i, val ) {
+        return !val;
+      });
+});
