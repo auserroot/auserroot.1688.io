@@ -203,7 +203,7 @@ function removeCart(){
 }
 $('.goos_m_c').children().children('#check').click(function(){
     console.log(1)
-    $(this).attr("checked",'checked');
+    $(this).prop("checked",true);
 });
 $('._icon_r_b2').click(function(){
     if($(this).parent().prev().children().children('#check').is(':checked')) {
