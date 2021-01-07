@@ -174,7 +174,7 @@ $('#myModal').modal();
 
 
 // 注册
-$('#reg_btn').click(function(){
+$('#reg_btn').click(function(e){
     $.ajax({
         url:"../json/reg.json",
         data:{
