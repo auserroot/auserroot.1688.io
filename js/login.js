@@ -39,10 +39,14 @@ $('#login').click(function(){
         success:function(res){
             if (res.code == 1) {
                 if (/^\w{6,11}/.test($('#username').val())) {
-                    // 登录成功，信息添加到本地存储
-                    localStorage.setItem('name', $('#username').val());
-                    localStorage.setItem('password', $('#password').val());
-                    location.href = "../index.html"
+                    if (/^[\w~!@#\$%\^&*\.]{6,12}$/.test($('#password').val())) {
+                        // 登录成功，信息添加到本地存储
+                        localStorage.setItem('name', $('#username').val());
+                        localStorage.setItem('password', $('#password').val());
+                        location.href = "../index.html"
+                    } else {
+                        $('#password').next().html('密码有误');
+                    }
                 } else {
                     $('#username').val('用户名有误！请重新输入')
                 }

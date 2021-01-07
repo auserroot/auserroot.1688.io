@@ -166,6 +166,8 @@ $(function(){
       });
     });
   });
+
+
 //模态框
 //打开页面加载模态框
 $('#myModal').modal();
@@ -181,11 +183,23 @@ $('#reg_btn').click(function(){
         },
         dataType:'json',
         success:function(res){
-            if(res.code==1){
-                // 注册成功，信息添加到本地存储
-                localStorage.setItem('name',$('#username').val());
-                localStorage.setItem('password',$('#password').val());
-                location.href = "../login.html"
+            if (res.code == 1) {
+                if (/^\w{6,11}/.test($('#username').val())) {
+                    if (/^[\w~!@#\$%\^&*\.]{6,12}$/.test($('#pwd').val())) {
+                        if ($('#pwd').val() === $('#pwsd').val()) {
+
+                            // 注册成功，信息添加到本地存储
+                            localStorage.setItem('name', $('#username').val());
+                            localStorage.setItem('password', $('#password').val());
+                            location.href = "../login.html"
+                        }else{
+                            $('#pwd').next().html('两次密码不一致');
+                            $('#pwd').next().html('与上面密码不一致');
+                        }
+                    }
+                } else {
+                    $('#username').val('用户名有误');
+                }
             }
         }
     });
