@@ -190,7 +190,7 @@ $('#reg_btn').click(function(){
 
                             // 注册成功，信息添加到本地存储
                             localStorage.setItem('name', $('#username').val());
-                            localStorage.setItem('password', $('#password').val());
+                            localStorage.setItem('password', $('#pwd').val());
                             location.href = "../login.html"
                         }else{
                             $('#pwd').next().html('两次密码不一致');
