@@ -140,3 +140,11 @@ $(window).scroll(function (e) {//监控滚动事件
         }
     }
 });
+
+
+// 添加用户名
+$('html,body').ready(function(){
+    if(localStorage.getItem("name")){
+        $('#login').html(localStorage.getItem("name"));
+    }
+});

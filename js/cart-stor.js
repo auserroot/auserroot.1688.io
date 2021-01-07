@@ -208,3 +208,11 @@ $('._icon_r_b2').click(function(){
         location.href='../cart-stor.html';
     }
 });
+
+
+// 添加用户名
+$('html,body').ready(function(){
+    if(localStorage.getItem("name")){
+        $('#login').html(localStorage.getItem("name"));
+    }
+});
