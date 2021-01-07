@@ -1,0 +1,53 @@
+p {
+  width: 30px;
+  height: 20px;
+}
+p span {
+  display: block;
+  width: 40px;
+}
+p a {
+  background: fixed;
+}
+
+ul li:nth-child(1) {
+  width: 20px;
+}
+
+ul li:nth-child(2) {
+  width: 40px;
+}
+
+ul li:nth-child(3) {
+  width: 60px;
+}
+
+ul li:nth-child(4) {
+  width: 80px;
+}
+
+ul li:nth-child(1) {
+  width: 7px;
+}
+
+ul li:nth-child(2) {
+  width: 14px;
+}
+
+ul li:nth-child(3) {
+  width: 21px;
+}
+
+ul li:nth-child(4) {
+  width: 28px;
+}
+
+ul li:nth-child(5) {
+  width: 35px;
+}
+
+div {
+  width: auto;
+}
+
+/*# sourceMappingURL=3.css.map */
