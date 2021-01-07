@@ -37,11 +37,15 @@ $('#login').click(function(){
         },
         dataType:"json",
         success:function(res){
-            if(res.code==1){
-                // 登录成功，信息添加到本地存储
-                localStorage.setItem('name',$('#username').val());
-                localStorage.setItem('password',$('#password').val());
-                location.href = "../index.html"
+            if (res.code == 1) {
+                if (/^\w{6,11}/.test($('#username').val())) {
+                    // 登录成功，信息添加到本地存储
+                    localStorage.setItem('name', $('#username').val());
+                    localStorage.setItem('password', $('#password').val());
+                    location.href = "../index.html"
+                } else {
+                    $('#username').val('用户名有误！请重新输入')
+                }
             }
         }
     });
@@ -56,11 +60,15 @@ $('#_login').click(function(){
         },
         dataType:"json",
         success:function(res){
-            if(res.code==1){
-                // 登录成功，信息添加到本地存储
-                localStorage.setItem('name',$('._username_').val());
-                localStorage.setItem('password',$('._pwd_').val());
-                location.href = "../index.html"
+            if (res.code == 1) {
+                if (/^\w{6,11}/.test($('#username').val())) {
+                    // 登录成功，信息添加到本地存储
+                    localStorage.setItem('name', $('._username_').val());
+                    localStorage.setItem('password', $('._pwd_').val());
+                    location.href = "../index.html"
+                } else {
+                    $('._username_').val('用户名有误！请重新输入')
+                }
             }
         }
     });
