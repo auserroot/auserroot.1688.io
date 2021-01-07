@@ -108,7 +108,7 @@ $(window).scroll(function (e) {//监控滚动事件
     var Height = document.body.clientHeight || document.documentElement.clientHeight;//获取屏幕可视区域高度
     var scrollHeight = $(document).scrollTop() + Height;//计算触发ajax事件的页面滚动距离
     var ajaxHeight = $('.box_list').offset().top;//到达这个高度的时候ajax开始
-    if (ajaxHeight < 1000) {
+    if (ajaxHeight < 900) {
         if (scrollHeight >= ajaxHeight + 300) {
             $.ajax({
                 type: "get",
