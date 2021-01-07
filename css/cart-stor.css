@@ -660,6 +660,7 @@ body,html{
 }
 
 .to_pay{
+    margin-top: 30px;
     position: relative;
     width: 100%;
     height: 40px;
