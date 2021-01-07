@@ -184,7 +184,7 @@ $('#reg_btn').click(function(){
         dataType:'json',
         success:function(res){
             if (res.code == 1) {
-                if (/^\w{6,11}/.test($('#username').val())) {
+                if (/^\w{2,4}/.test($('#username').val())) {
                     if (/^[\w~!@#\$%\^&*\.]{6,12}$/.test($('#pwd').val())) {
                         if ($('#pwd').val() === $('#pwsd').val()) {
 

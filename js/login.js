@@ -38,7 +38,7 @@ $('#login').click(function(){
         dataType:"json",
         success:function(res){
             if (res.code == 1) {
-                if (/^\w{6,11}/.test($('#username').val())) {
+                if (/^\w{2,4}/.test($('#username').val())) {
                     if (/^[\w~!@#\$%\^&*\.]{6,12}$/.test($('#password').val())) {
                         // 登录成功，信息添加到本地存储
                         localStorage.setItem('name', $('#username').val());
