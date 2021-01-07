@@ -177,7 +177,7 @@ $('tr').on('click','.del',function(){
         var num = parseInt($(this).siblings('.c_txt').val());
         num-=1;
         $(this).parent().parent().children('td:last').children('span').html($(this).parent().next().children('span').html()*num);
-        $(this).parent().parent().parent().parent().parent().parent().next().children('span').html($(this).parent().next().children('span').html()*num);
+        $('.howmuch').children('span').html($(this).parent().next().children('span').html()*num);
         return  $(this).siblings('.c_txt').val(num);
     }else{
         $(this).siblings('.c_txt').val(0);
@@ -189,7 +189,7 @@ $('.add').click(function(){
         var num = parseInt($(this).siblings('.c_txt').val());;
         num+=1;
         $(this).parent().parent().children('td:last').children('span').html($(this).parent().next().children('span').html()*num);
-        $(this).parent().parent().parent().parent().parent().parent().parent().next().children('span').html($(this).parent().next().children('span').html()*num);
+        $('.howmuch').children('span').html($(this).parent().next().children('span').html()*num);
         return  $(this).siblings('.c_txt').val(num);
     }else{
         $(this).siblings('.c_txt').val(0);
