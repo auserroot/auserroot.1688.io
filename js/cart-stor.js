@@ -119,6 +119,7 @@ function showList(){
     $.each(productList,function(index,product){
         console.log(product)
         $('.goos_m_c').children().append(`
+        <div>
         <input type="checkbox" id="check">
         <img src="${product.img}" alt="">
         <p class="g_p">${product.name}<i class="_icon_main"><img src="https://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_mix.gif" alt=""></i><i><img src="https://cbu01.alicdn.com/cms/upload/2015/111/115/2511111_1964054271.png" alt=""></i></p>
@@ -147,6 +148,7 @@ function showList(){
                 </tr>
             </tbody>
         </table>
+        </div>
         `)
     
     })
@@ -215,4 +217,16 @@ $('html,body').ready(function(){
     if(localStorage.getItem("name")){
         $('#login').html(localStorage.getItem("name"));
     }
+});
+
+
+//结算
+$('.to_pay').click(function(){
+    var str = $(this).parent().prev().children().children().children('.goods_info').children().children().children('td:last').children().html();
+    $.each(str,function(i,item){
+        var num =0; 
+        num += parseInt(item);
+        $('.howmuch').html(num);
+    })
+    
 });
