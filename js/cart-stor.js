@@ -119,7 +119,7 @@ function showList(){
     $.each(productList,function(index,product){
         console.log(product)
         $('.goos_m_c').children().append(`
-        <input type="checkbox">
+        <input type="checkbox" id="check">
         <img src="${product.img}" alt="">
         <p class="g_p">${product.name}<i class="_icon_main"><img src="https://cbu01.alicdn.com/cms/upload/trade/businessicon/icon_mix.gif" alt=""></i><i><img src="https://cbu01.alicdn.com/cms/upload/2015/111/115/2511111_1964054271.png" alt=""></i></p>
 
@@ -197,10 +197,14 @@ function removeCart(){
 
     localStorage.removeItem('cart');
 }
-
+$('.goos_m_c').children().children('#check').click(function(){
+    console.log(1)
+    $(this).attr("checked",'checked');
+});
 $('._icon_r_b2').click(function(){
-    if($(this).parent().prev().children().children('input[type="checkbox"]').is(':checked')) {
+    if($(this).parent().prev().children().children('#check').is(':checked')) {
         $(this).parent().parent().children($('.goos_m_c')).children().remove();
         removeCart();
+        location.href='../cart-stor.html';
     }
 });

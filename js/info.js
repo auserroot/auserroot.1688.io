@@ -214,6 +214,7 @@ $('.add').click(function(){
 //点击进入进货单
 $('.add_tocart').click(function(){
     location.href='../cart-stor.html';
+    $('.c_txt').val(0);
 })
 
 
