@@ -2,8 +2,6 @@
 
 #### This is a test site for testing the level of learning
 
-#### 作业
-项目作业
 #### 简介
 - 该项目使用html5+css+javascript实现
 - 其中javascript脚本使用了原生和jquery
