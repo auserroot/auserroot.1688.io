@@ -111,9 +111,10 @@ $(window).scroll(function (e) {//监控滚动事件
     var tiemr 
     if(!timer){
         timer = setInterval(()=>{
-        timer = null
+            clearINterval(timer)
+            timer = null
             if (ajaxHeight < 900) {
-                if (scrollHeight >= ajaxHeight + 300) {
+                if (scrollHeight >= ajaxHeight + 600) {
                      $.ajax({
                         type: "get",
                         url: "../json/1688.json",
