@@ -111,7 +111,6 @@ $(window).scroll(function (e) {//监控滚动事件
     var tiemr 
     if(!timer){
         timer = setInterval(()=>{
-            clearInterval(timer)
             timer = null
             if (ajaxHeight < 900) {
                 if (scrollHeight >= ajaxHeight + 600) {
@@ -143,7 +142,8 @@ $(window).scroll(function (e) {//监控滚动事件
 
             });
         }
-    }
+    }      
+    clearInterval(timer)
     },1000)
     }
     
