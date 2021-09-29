@@ -111,7 +111,7 @@ $(window).scroll(function (e) {//监控滚动事件
     var tiemr 
     if(!timer){
         timer = setInterval(()=>{
-            clearINterval(timer)
+            clearInterval(timer)
             timer = null
             if (ajaxHeight < 900) {
                 if (scrollHeight >= ajaxHeight + 600) {
