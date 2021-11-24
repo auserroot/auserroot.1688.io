@@ -102,19 +102,24 @@ $('.menu_list').children().mouseout(function(){
 })
 
 
-
+let timer = null
+let flag = 0
+let flagHight = 0
 //猜你喜欢 goods——list
 $(window).scroll(function (e) {//监控滚动事件
     var Height = document.body.clientHeight || document.documentElement.clientHeight;//获取屏幕可视区域高度
     var scrollHeight = $('.box_list').scrollTop() + Height;//计算触发ajax事件的页面滚动距离
     var ajaxHeight = $('.box_list').offset().top;//到达这个高度的时候ajax开始
-    var tiemr 
+    console.log(Height,scrollHeight,ajaxHeight)
     if(!timer){
         timer = setInterval(()=>{
+            clearInterval(timer)
             timer = null
-            if (ajaxHeight < 900) {
-                if (scrollHeight >= ajaxHeight + 600) {
-                     $.ajax({
+                if ((scrollHeight < ajaxHeight)&&flag==0||(flag!=0&& ajaxHeight - 315 > flagHight) ) {
+                    if(ajaxHeight + 315 >4000)return
+                    flagHight = ajaxHeight
+                    flag = 1
+                    $.ajax({
                         type: "get",
                         url: "../json/1688.json",
                         dataType: "json",
@@ -141,10 +146,9 @@ $(window).scroll(function (e) {//监控滚动事件
                 }
 
             });
-        }
+        
     }      
-    clearInterval(timer)
-    },1000)
+    },5000)//5s加载一次
     }
     
 });
